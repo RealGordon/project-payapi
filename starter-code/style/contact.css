@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(251, 252, 254);
+}
+.footer{
+    background-color: rgb(27, 38, 47);
+    color: white;
+    margin: 0;
+}
+button{
+    background-color: #ba4270;
+    color:  white;
+      border-radius: 20px;
+      border: 0px;
+      cursor: pointer;
+      padding: 8px;
+      width: 150px;
+}
+input{
+    border: 0;
+    background-color:rgb(251, 252, 254) ;
+    
+}
+
+input:focus{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0 ;
+    background-color:rgb(251, 252, 254) ;
+    outline: none;
+}
+
+input[type=text] {
+    border: none;
+    color: rgb(196, 190, 190);
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding: 8px;
+    width: 300px;
+  }
+
+  .RTS input[type=text] {
+    border: none;
+    background-color: white;
+    color: rgb(196, 190, 190);
+    border-top-left-radius: 15px ;
+    border-bottom-left-radius: 15px;
+    border-bottom: 0px solid rgb(161, 161, 161);
+    padding: 8px;
+    padding-left: 15px;
+    width: 180px;
+    
+  }
+
+  input[type=text]:focus {
+    border;
+    color: rgb(255, 64, 64);
+    border-bottom: 1px solid rgb(255, 64, 64);
+    
+  }
+
+  input[type=text]::after {
+    border;
+    color: rgb(54, 83, 107);
+    border-bottom: 1px solid rgb(54, 83, 107);
+    
+  }
+
+  input[type=submit] {
+      background-color: rgb(211, 231, 248);
+      border: 1px solid black;
+      border-radius: 20px;
+      cursor: pointer;
+      padding: 8px;
+      width: 110px;
+
+  }
+
+  p input[type="checkbox"] {
+      background-color: rgb(161, 161, 161) ;
+  }
