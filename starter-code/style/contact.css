@@ -1,23 +1,186 @@
+/*font-family: 'Public Sans', sans-serif;
+font-family: 'DM Serif Display', serif;
+*/
+
 body{
-    background-color: rgb(251, 252, 254);
+    background-color: #EDF3F8;
+    color: #36536B;
+    margin: 0;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBar button {
+    height: 30px;
+}
+.navBar ul{
+    display: flex;
+    
+}
+.navBar li{
+    margin: 35px;
+    list-style-type: none;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: #36536B;
+}
+
+
+.middle{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.middle-left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hOne h1{
+    margin-left: 165px;
+    font-family: DM Serif Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 56px;
+    font-family: 'DM Serif Display', serif;
+    /* or 100% */
+
+    letter-spacing: -0.430769px;
+
+    color: #36536B;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.middle-right{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.paraG p{
+    font-family: DM Serif Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    /*margin-top: 70px;*/
+    /* or 133% */
+    
+
+    letter-spacing: -0.184615px;
+
+    color: #36536B;
+
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+.middle-right svg{
+    margin: 15px;
+}
+
+#part1{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+
+
+#part2{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+
+.sGv {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .footer{
-    background-color: rgb(27, 38, 47);
-    color: white;
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1B262F;
+    color: #FBFCFE;
     margin: 0;
+    height: 100px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+.f-foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer ul{
+    display: flex;
+    
+}
+
+
+.footer li{
+    margin-left: 25px;
+    margin-right: 25px;
+    list-style-type: none;
+
+}
+.footer a{
+    text-decoration: none;
+    color: #FBFCFE;
+}
+
+.f-footSvg svg{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 button{
-    background-color: #ba4270;
-    color:  white;
+    background-color: #BA4270;
+    color:  #FBFCFE;
       border-radius: 20px;
       border: 0px;
       cursor: pointer;
       padding: 8px;
       width: 150px;
 }
+button:hover{
+    background-color: #DA6D97;
+    
+}
+form{
+    margin-left: 165px;
+    font-family: 'Public Sans', sans-serif;
+}
 input{
     border: 0;
-    background-color:rgb(251, 252, 254) ;
+    background-color: #EDF3F8 ;
+    
     
 }
 
@@ -26,55 +189,125 @@ input:focus{
     border-right: 0;
     border-left: 0;
     border-bottom: 0 ;
-    background-color:rgb(251, 252, 254) ;
+    background-color:EDF3F8;
     outline: none;
 }
 
+
 input[type=text] {
     border: none;
-    color: rgb(196, 190, 190);
+    font-size: 15px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.5;
     border-bottom: 1px solid rgb(161, 161, 161);
-    padding: 8px;
-    width: 300px;
+    padding: 4px;
+    width: 445px;
+    height: 42;
+    
+  }
+
+.error{
+      color: rgb(255, 64, 64);
+      font-size: 11px;
+      padding-top: 10px;
+      font-family: 'Public Sans', sans-serif;
+           
+  }
+.error input[type=text]{
+    border-color: rgb(255, 64, 64);
+}
+  
+ 
+  #message{
+      height: 89px;
+      padding-top: 0px;
+  }
+
+  .RTS{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;          
+      
+  }
+
+  .RTS h2{
+     font-family: DM Serif Display; 
+     font-size: 40px;      
+      line-height: 56px;
+      line-height: 85%;      
+      letter-spacing: -0.37px;
+      margin-left: 30px;
   }
 
   .RTS input[type=text] {
-    border: none;
-    background-color: white;
-    color: rgb(196, 190, 190);
-    border-top-left-radius: 15px ;
-    border-bottom-left-radius: 15px;
-    border-bottom: 0px solid rgb(161, 161, 161);
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    font-size: 15px;
+    border-radius: 24px;
     padding: 8px;
     padding-left: 15px;
-    width: 180px;
+    width: 250px;
     
   }
 
-  input[type=text]:focus {
-    border;
+  .RTS button{
+      position: relative;
+      left: -38px;
+  }
+
+  input[type=text]:hover {
+    border:0;
     color: rgb(255, 64, 64);
     border-bottom: 1px solid rgb(255, 64, 64);
+    cursor:  pointer;
     
   }
 
-  input[type=text]::after {
-    border;
-    color: rgb(54, 83, 107);
-    border-bottom: 1px solid rgb(54, 83, 107);
+  input[type=email]:hover {
+    border:0;
+    color: rgb(255, 64, 64);
+    border-bottom: 1px solid rgb(255, 64, 64);
+    cursor:  pointer;
     
   }
-
+  
   input[type=submit] {
-      background-color: rgb(211, 231, 248);
-      border: 1px solid black;
+
+      background-color: #EDF3F8;
+      border: 1px solid #36536B;
       border-radius: 20px;
       cursor: pointer;
       padding: 8px;
       width: 110px;
-
+      margin-left: 20px;
+      margin-top: 20px;
   }
 
-  p input[type="checkbox"] {
-      background-color: rgb(161, 161, 161) ;
+  input[type=submit]:hover{
+      background-color: #36536B;
+      color: white;
+  }
+
+.middle-left input[type="checkbox"] {
+     
+     background-color: #36536B;
+     accent-color: #BA4270;  
+     cursor: pointer;
+        
+    width: 20px;
+    height: 20px;
+  }
+
+  .middle-left input[type="checkbox"]:hover{
+     background-color: #36536B;
+     opacity: 25%;
+  }
+  .diff-nt{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
   }
