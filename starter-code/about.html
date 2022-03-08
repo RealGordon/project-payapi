@@ -5,15 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">  -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
   <body>
+    <!-- nav bar -->
+    <header id="nav">
+
+      <!-- <div>
+        <div><a href="#"><img src="./assets/shared/desktop/logo.svg" alt=""></a></div>
+        
+        <div>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        
+        <div>
+          <button>Schedule a Demo</button>
+        </div>
+      </div> -->
+      <!-- <div class="w3-bar">
+        <div>
+        <a href="#" class="w3-bar-item w3-button"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
+      </div>
+        <a href="#" class="w3-bar-item w3-button">Pricing</a>
+        <a href="#" class="w3-bar-item w3-button">About</a>
+        <a href="#" class="w3-bar-item w3-button">Contact</a>
+        <div id="but">
+          <button class="w3-btn w3-round-xxlarge w3-pink w3-right" id="new">Schedule a Demo</button>
+        </div>
+      </div> -->
+
+      <div class="w3-row">
+        <div class="w3-col s4 w3-left-align">
+          <a href="#" class="w3-bar-item w3-button"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
+        </div>
+        <div class="w3-col s4 w3-left-align">
+          <a href="#" class="w3-bar-item w3-button">Pricing</a>
+        <a href="#" class="w3-bar-item w3-button">About</a>
+        <a href="#" class="w3-bar-item w3-button">Contact</a>
+        </div>
+        <div class="w3-col s4 w3-center">
+          <button class="w3-btn w3-round-xxlarge w3-pink w3-right" id="new">Schedule a Demo</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- headline -->
+      <div class="headline">
+        <h1>We empower innovators by delivering access to the financial system</h1>
+      </div>
+
+      <!-- <div class="w3-container"></div> -->
+
+      <!-- Vision and Business -->
+      <div id="headgrid">
+      <div class="w3-row" id="vision">
+        <div class="w3-col w3-container w3-text-dark-gray" style="width:250px"><p>Our Vision</p></div>
+        <div class="w3-rest w3-container w3-text-dark-gray"><p>Our main goal is to build beautiful consumer experiences along with developer-friendly 
+          infrastructure. The result is an intelligent tool that gives everyone the ability to create 
+          amazing products that solve big problems. We are deeply focused on democratizing financial 
+          services through technology.</p></div>
+      </div>
+      <br>
+      <div class="w3-row" id="business">
+        <div class="w3-col w3-container w3-text-dark-gray" style="width:250px" ><p>Our Business</p></div>
+        <div class="w3-rest w3-container w3-text-dark-gray"><p>At the core of our platform is the technical infrastructure APIs that connect consumers. 
+          Our innovative product provides key insights for businesses and individuals, as well as 
+          robust reporting for traditional financial institutions and developers.</p></div>
+      </div>
+    </div>
+
+    <!-- image -->
+      <img src="./assets/about/desktop/image-team-members.jpg" alt="LA" style="width:100%">
+
+      <!-- Team -->
+      <div id="layout">
+        <div class="w3-cell-row">
+          <div id="lay1" class="w3-container w3-cell w3-cell-top w3-text-dark-gray 
+          w3-border-top w3-border-bottom">
+            <p>Team Members </p>
+            <p class="w3-text-pink">300+</p>
+          </div>
+          
+          <div id="lay2" class="w3-container  w3-cell w3-cell-top w3-text-dark-gray
+          w3-border-top w3-border-bottom">
+            <p>Offices in the US </p>
+            <p class="w3-text-pink">3</p>
+          </div>
+          <div id="lay3" class="w3-container  w3-cell w3-cell-top w3-text-dark-gray 
+          w3-border-top w3-border-bottom">
+            <p>Transactions analyzed </p>
+            <p class="w3-text-pink">10M+</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Culture and People -->
+      
+      <div id="bottomgrid" id="vision">
+        <div class="w3-row">
+          <div class="w3-col w3-container w3-text-dark-gray" style="width:250px" ><p>The Culture</p></div>
+          <div class="w3-rest w3-container  w3-text-dark-gray"><p>We strongly believe there's always an opportunity to learn from each other outside of 
+            day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
+            We always value cross-team collaboration and diversity of thought, no matter the job title.</p></div>
+        </div>
+        <!-- <br> -->
+        <div class="w3-row" id="business">
+          <div class="w3-col w3-container w3-text-dark-gray" style="width:250px" ><p>The People</p></div>
+          <div class="w3-rest w3-container  w3-text-dark-gray"><p>At the core of our platform is the technical infrastructure APIs that connect consumers. 
+            We're all passionate about building a more efficient and inclusive financial infrastructure 
+    together. At PayAPI, we have diverse backgrounds and skills.</p></div>
+        </div>
+      </div>
+
+      <!-- Ready -->
+      <div class="w3-row" id="ready">
+        <div class="w3-col s6 w3-left-align">
+          <p>Ready to start? </p>
+        </div>
+        <div class="w3-col s6 w3-center">
+          <!-- <div class="w3-container">
+            <p><button class="w3-button w3-pink w3-round-xxlarge">Round XXLarge</button></p>
+          </div> -->
+
+          <div class="w3-container  w3-padding">
+            <form onsubmit="event.preventDefault()" class="pricing-schedule-form  w3-cell-row w3-round-xxlarge">
+              <div class="w3-cell">
+           <input class="w3-round-xxlarge pricing-schedule-input" 
+           placeholder="Enter email address" required> </div>
+           <div class="w3-cell">
+           <button  class="w3-btn w3-round-xxlarge pricing-schedule-button" type="submit">
+             Schedule a Demo</button></div>
+          </form>
+        </div>
+        </div>
+      </div>
+
+
+    </main>
+
+    <footer id="foot">
+      <!-- footer nav -->
+
+      <!-- <div class="w3-container  w3-padding">
+        <form onsubmit="event.preventDefault()" class="pricing-schedule-form  w3-cell-row w3-round-xxlarge">
+          <div class="w3-cell">
+       <input class="w3-round-xxlarge pricing-schedule-input" 
+       placeholder="Enter email address" required> </div>
+       <div class="w3-cell">
+       <button  class="w3-btn w3-round-xxlarge pricing-schedule-button" type="submit">
+         Schedule a Demo</button></div>
+      </form>
+    </div> -->
+
+      <div class="w3-bar w3-black" >
+        <!-- <img src="./assets/shared/desktop/logo.svg" alt=""> -->
+        <a href="#" class="w3-bar-item w3-button" id="fnav"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
+        <a href="#" class="w3-bar-item w3-button">Pricing</a>
+        <a href="#" class="w3-bar-item w3-button">About</a>
+        <a href="#" class="w3-bar-item w3-button">Contact</a>
+        <div id="but">
+          <button class="w3-btn w3-round-xxlarge w3-pink w3-right" id="new">Schedule a Demo</button>
+        </div>
+        <!-- <button class="w3-btn w3-round-xxlarge w3-pink w3-right">Schedule a Demo</button> -->
+        <!-- <a href="#" class="w3-bar-item w3-button w3-green w3-right">Link 3</a> -->
+      </div>
+    </footer>
+    <!-- <div class="w3-container w3-red">
+      <p>Hello W3.CSS Layout.</p>
+    </div>
+    
+    <div class="w3-container w3-green">
+      <p>Hello W3.CSS Layout.</p>
+    </div> 
+    
     Pricing
     About
     Contact
     Schedule a Demo
+    
 
     We empower innovators by delivering access to the financial system
 
@@ -57,6 +239,7 @@
     Pricing
     About
     Contact
+    <h1>come</h1> -->
   </body>
 
 </html>

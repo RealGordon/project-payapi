@@ -1,0 +1,125 @@
+body {
+  background-color: #edf3f8;
+}
+
+#nav {
+  /* margin: 5rem; */
+  margin-left: 165px;
+  margin-right: 165px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: #edf3f8;
+  /* background-color:  */
+
+  /* background-image: url("ass"); */
+  /* display: flex;
+  flex-direction: row; */
+  /* height: 48px;
+  width: 689px;
+  left: 39px;
+  top: 40px;
+  border-radius: 0px; */
+}
+
+#new {
+  background-image: url(/project-payapi/starter-code/assets/shared/desktop/bg-pattern-circle.svg);
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"); */
+.headline h1 {
+  margin-left: 260px;
+  top: 170px;
+  margin-right: 550px;
+  color: #36536b;
+  font-family: "DM Serif Display";
+  /* height: 189px;
+  width: 730px; */
+  /* left: 260px; */
+  /* top: 170px; */
+  /* border-radius: nullpx; */
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    display: block;
+    text-align: center;
+  }
+}
+
+#headgrid {
+  margin-top: 3rem;
+  /* margin-top: 120px; */
+  margin-bottom: 5rem;
+  margin-left: 250px;
+  width: 920px;
+  line-height: 30px;
+  /* margin-right: 10rem; */
+  /* color: gray; */
+}
+
+/* #business {
+  margin-top: 2rem;
+} */
+
+#vision {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* #business {
+  color: gray;
+} */
+
+#layout {
+  /* margin: 5rem; */
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 165px;
+  margin-right: 165px;
+}
+
+#lay1 {
+  margin-right: 2rem;
+}
+
+#bottomgrid {
+  /* margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem; */
+
+  margin-top: 3rem;
+  /* margin-top: 120px; */
+  margin-bottom: 5rem;
+  margin-left: 250px;
+  width: 920px;
+  line-height: 30px;
+}
+
+.pricing-schedule-input {
+  border-style: none;
+}
+.pricing-schedule-form {
+  background-color: #fff;
+  width: fit-content;
+}
+.pricing-schedule-button {
+  background-color: #ba4270;
+  color: #fbfcfe;
+}
+
+#ready {
+  /* margin-left: 5rem;
+  margin-right: 5rem; */
+
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 165px;
+  margin-right: 165px;
+}
+
+#fnav {
+  margin-left: 5rem;
+  background-color: black;
+  /* background-image: url("ass"); */
+}
