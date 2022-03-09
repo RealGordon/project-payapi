@@ -3,11 +3,11 @@ body {
 }
 
 #nav {
-  /* margin: 5rem; */
-  margin-left: 165px;
+  margin: 5rem;
+  /* margin-left: 165px;
   margin-right: 165px;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; */
   background: #edf3f8;
   /* background-color:  */
 
@@ -22,16 +22,18 @@ body {
 }
 
 #new {
+  color: #ba4270;
   background-image: url(/project-payapi/starter-code/assets/shared/desktop/bg-pattern-circle.svg);
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"); */
 .headline h1 {
-  margin-left: 260px;
+  margin-left: 12rem;
   top: 170px;
-  margin-right: 550px;
+  margin-right: 20rem;
   color: #36536b;
   font-family: "DM Serif Display";
+  font-size: 4rem;
   /* height: 189px;
   width: 730px; */
   /* left: 260px; */
@@ -40,18 +42,54 @@ body {
 }
 
 @media only screen and (max-width: 640px) {
-  body {
+  body,
+  #nav,
+  #new,
+  .headline,
+  #headgrid,
+  #vision,
+  #layout,
+  #image {
     display: block;
     text-align: center;
   }
 }
 
+#view {
+  font-family: "DM Serif Display";
+  font-size: 2rem;
+  color: #36536b;
+}
+#team {
+  color: #6c8294;
+}
+
+#new {
+  background-color: #ba4270;
+  color: white;
+}
+
+.text {
+  color: #ba4270;
+  font-size: 4rem;
+  font-family: "DM Serif Display";
+}
+
+#items {
+  color: #6c8294;
+}
+
+#paragraph {
+  color: #6c8294;
+}
+
 #headgrid {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   /* margin-top: 120px; */
   margin-bottom: 5rem;
-  margin-left: 250px;
-  width: 920px;
+  margin-left: 12rem;
+  margin-right: 2rem;
+  /* width: 920px; */
   line-height: 30px;
   /* margin-right: 10rem; */
   /* color: gray; */
@@ -62,6 +100,7 @@ body {
 } */
 
 #vision {
+  /* position: fixed; */
   margin-top: 5rem;
   margin-bottom: 2rem;
 }
@@ -72,10 +111,12 @@ body {
 
 #layout {
   /* margin: 5rem; */
-  margin-top: 80px;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  /* margin-top: 80px;
   margin-bottom: 80px;
   margin-left: 165px;
-  margin-right: 165px;
+  margin-right: 165px; */
 }
 
 #lay1 {
@@ -90,9 +131,15 @@ body {
 
   margin-top: 3rem;
   /* margin-top: 120px; */
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem;
   margin-left: 250px;
   width: 920px;
+  line-height: 30px; */
+
+  margin-bottom: 5rem;
+  margin-left: 12rem;
+  margin-right: 2rem;
+  /* width: 920px; */
   line-height: 30px;
 }
 
@@ -109,13 +156,18 @@ body {
 }
 
 #ready {
-  /* margin-left: 5rem;
-  margin-right: 5rem; */
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-family: "DM Serif Display";
 
-  margin-top: 80px;
+  /* margin-top: 80px;
   margin-bottom: 80px;
   margin-left: 165px;
-  margin-right: 165px;
+  margin-right: 165px; */
+}
+
+#ready p {
+  font-size: 3rem;
 }
 
 #fnav {

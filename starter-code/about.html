@@ -12,8 +12,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">  -->
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
+<!-- <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">  -->
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
@@ -34,19 +37,21 @@
           <button>Schedule a Demo</button>
         </div>
       </div> -->
-      <!-- <div class="w3-bar">
+      <div class="w3-bar">
         <div>
         <a href="#" class="w3-bar-item w3-button"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
       </div>
+      <div id="items">
         <a href="#" class="w3-bar-item w3-button">Pricing</a>
         <a href="#" class="w3-bar-item w3-button">About</a>
         <a href="#" class="w3-bar-item w3-button">Contact</a>
+      </div>
         <div id="but">
-          <button class="w3-btn w3-round-xxlarge w3-pink w3-right" id="new">Schedule a Demo</button>
+          <button class="w3-btn w3-round-xxlarge w3-right" id="new">Schedule a Demo</button>
         </div>
-      </div> -->
+      </div>
 
-      <div class="w3-row">
+      <!-- <div class="w3-row">
         <div class="w3-col s4 w3-left-align">
           <a href="#" class="w3-bar-item w3-button"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
         </div>
@@ -58,7 +63,7 @@
         <div class="w3-col s4 w3-center">
           <button class="w3-btn w3-round-xxlarge w3-pink w3-right" id="new">Schedule a Demo</button>
         </div>
-      </div>
+      </div> -->
     </header>
 
     <main>
@@ -72,42 +77,42 @@
       <!-- Vision and Business -->
       <div id="headgrid">
       <div class="w3-row" id="vision">
-        <div class="w3-col w3-container w3-text-dark-gray" style="width:250px"><p>Our Vision</p></div>
-        <div class="w3-rest w3-container w3-text-dark-gray"><p>Our main goal is to build beautiful consumer experiences along with developer-friendly 
+        <div class="w3-col w3-container w3-text-dark-gray" id="view" style="width:250px"><p>Our Vision</p></div>
+        <div class="w3-rest w3-container w3-text-dark-gray" id="paragraph"><p id="paragraph">Our main goal is to build beautiful consumer experiences along with developer-friendly 
           infrastructure. The result is an intelligent tool that gives everyone the ability to create 
           amazing products that solve big problems. We are deeply focused on democratizing financial 
           services through technology.</p></div>
       </div>
       <br>
       <div class="w3-row" id="business">
-        <div class="w3-col w3-container w3-text-dark-gray" style="width:250px" ><p>Our Business</p></div>
-        <div class="w3-rest w3-container w3-text-dark-gray"><p>At the core of our platform is the technical infrastructure APIs that connect consumers. 
+        <div class="w3-col w3-container w3-text-dark-gray" id="view" style="width:250px" ><p>Our Business</p></div>
+        <div class="w3-rest w3-container w3-text-dark-gray" id="paragraph"><p id="paragraph">At the core of our platform is the technical infrastructure APIs that connect consumers. 
           Our innovative product provides key insights for businesses and individuals, as well as 
           robust reporting for traditional financial institutions and developers.</p></div>
       </div>
     </div>
 
     <!-- image -->
-      <img src="./assets/about/desktop/image-team-members.jpg" alt="LA" style="width:100%">
+      <img id="image" src="./assets/about/desktop/image-team-members.jpg" alt="LA" style="width:100%">
 
       <!-- Team -->
       <div id="layout">
         <div class="w3-cell-row">
           <div id="lay1" class="w3-container w3-cell w3-cell-top w3-text-dark-gray 
           w3-border-top w3-border-bottom">
-            <p>Team Members </p>
-            <p class="w3-text-pink">300+</p>
+            <p id="team">Team Members </p>
+            <p class="text">300+</p>
           </div>
           
           <div id="lay2" class="w3-container  w3-cell w3-cell-top w3-text-dark-gray
           w3-border-top w3-border-bottom">
-            <p>Offices in the US </p>
-            <p class="w3-text-pink">3</p>
+            <p id="team">Offices in the US </p>
+            <p class="text">3</p>
           </div>
           <div id="lay3" class="w3-container  w3-cell w3-cell-top w3-text-dark-gray 
           w3-border-top w3-border-bottom">
-            <p>Transactions analyzed </p>
-            <p class="w3-text-pink">10M+</p>
+            <p id="team">Transactions analyzed </p>
+            <p class="text">10M+</p>
           </div>
         </div>
       </div>
@@ -116,15 +121,15 @@
       
       <div id="bottomgrid" id="vision">
         <div class="w3-row">
-          <div class="w3-col w3-container w3-text-dark-gray" style="width:250px" ><p>The Culture</p></div>
-          <div class="w3-rest w3-container  w3-text-dark-gray"><p>We strongly believe there's always an opportunity to learn from each other outside of 
+          <div class="w3-col w3-container w3-text-dark-gray" id="view" style="width:250px" ><p>The Culture</p></div>
+          <div class="w3-rest w3-container  w3-text-dark-gray"><p id="paragraph" >We strongly believe there's always an opportunity to learn from each other outside of 
             day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
             We always value cross-team collaboration and diversity of thought, no matter the job title.</p></div>
         </div>
         <!-- <br> -->
         <div class="w3-row" id="business">
-          <div class="w3-col w3-container w3-text-dark-gray" style="width:250px" ><p>The People</p></div>
-          <div class="w3-rest w3-container  w3-text-dark-gray"><p>At the core of our platform is the technical infrastructure APIs that connect consumers. 
+          <div class="w3-col w3-container w3-text-dark-gray" id="view" style="width:250px" ><p>The People</p></div>
+          <div class="w3-rest w3-container  w3-text-dark-gray"><p id="paragraph">At the core of our platform is the technical infrastructure APIs that connect consumers. 
             We're all passionate about building a more efficient and inclusive financial infrastructure 
     together. At PayAPI, we have diverse backgrounds and skills.</p></div>
         </div>
