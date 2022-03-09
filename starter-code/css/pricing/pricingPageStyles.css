@@ -50,6 +50,11 @@ letter-spacing: -0.430769px;
  background-color: #ba4270;
  color:#fbfcfe
 }
+.pricing-schedule-button:hover{
+  background-color: #da6d97;
+  color:#fbfcfe
+}
+
 .pricing-schedule-form{
   background-color: #fff;
   width: fit-content;
@@ -111,3 +116,55 @@ color: rgba(54, 83, 107,0.2);
 .pricing-header-section{
   margin-top:72px;
 }
+
+/*   footer */
+footer{
+  background-color: #1B262F;
+}
+.footer{
+  /*display: flex;*/
+  
+  justify-content: space-around;
+  align-items: center;
+  
+  color: #FBFCFE;
+  margin: 0;
+  height: 100px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+
+.footer-logo-menu{
+ /* display: flex;*/
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.footer-menu{
+ /* display: flex;*/
+  margin: 4px;
+}
+
+
+.footer-menu li{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+color: #FBFCFE;
+
+mix-blend-mode: normal;
+opacity: 0.7;
+  margin-left: 25px;
+  margin-right: 25px;
+  list-style-type: none;
+
+}
+.footer a{
+  text-decoration: none;
+  color: #FBFCFE;
+}
+
