@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
     <title>Frontend Mentor | PayAPI Website Challenge</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <!--  <link rel="stylesheet" href="/resources/css/4/w3.css" />-->
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="./css/pricingPageStyles.css" />
+    
+   
   </head>
 
   <body>
@@ -14,52 +19,86 @@
     About
     Contact
     Schedule a Demo
+<div class="w3-container w3-center" style="text-align: center;">
+ 
+  <h2 class="pricing-header">Pricing</h2>  </div>
 
-    Pricing
-
-    Free Plan
-    Build and test using our core set of products with up to 100 API requests
-    $0.00
+    <div class="pricing-plans w3-container  w3-col m12 w3-center">
     
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
-
-    Basic Plan
-    Launch your project with unlimited requests and no contractual minimums
-    $249.00
+      <div class="w3-constainer w3-col m4  w3-center">
+    <div  class="pricing-header-section">
+    <h3 class="pricing-plan-caption">Free Plan</h3>
+   <p class="pricing-plan-description w3-hide-small">Build and test using our core set of products with up to 100 API requests</p>
+    <p class="pricing-price">$0.00</p>
+  </div>
+    <div class="pricing-separator-line-1"></div>
+    <ul>
     
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
-
-    Premium Plan
-    Get tailored solutions, volume pricing, and dedicated support for your team
-    $499.00
+   <li class="w3-container pricing-list-first"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Transactions</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Auth</li>
+    <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Identity</li>
+    <li class="pricing-list-item pricing-list-item-faded ">Investments</li>
+    <li class="pricing-list-item pricing-list-item-faded ">Assets</li>
+    <li class="pricing-list-item pricing-list-item-faded ">Liabilities</li>
+    <li class="pricing-list-item pricing-list-item-faded ">Income</li>
+  </ul>
+  <div class="pricing-separator-line-2"></div>
+    <button class="pricing-request-button w3-btn w3-round-xxlarge">Request Access</button>
+  </div>
+  <div class="w3-container w3-col m4 w3-center" >
+    <div class="pricing-header-section">
+    <h3 class="pricing-plan-caption" >Basic Plan</h3>
+    <p class="pricing-plan-description w3-hide-small">Launch your project with unlimited requests and no contractual minimums</p>
+    <p class="pricing-price">$249.00</p>
+  </div>
+    <div class="pricing-separator-line-1"></div>
+    <ul>
+    <li class="w3-container pricing-list-first"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Transactions</li>
+    <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Auth</li>
+    <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Identity</li>
+    <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Investments</li>
+    <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Assets</li>
     
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
+    <li class="pricing-list-item pricing-list-item-faded">Liabilities</li>
+    <li class="pricing-list-item pricing-list-item-faded">Income</li></ul>
+    <div class="pricing-separator-line-2"></div>
+    <button class="pricing-request-button w3-btn w3-round-xxlarge">Request Access</button>
+  </div>
+  <div class="w3-container w3-col m4 w3-center">
+  <div  class="pricing-header-section"> 
+    <h3 class="pricing-plan-caption">Premium Plan</h3>
+    <p class="pricing-plan-description w3-hide-small">Get tailored solutions, volume pricing, and dedicated support for your team</p>
+    <p class="pricing-price"> $499.00</p></div>
+    <div class="pricing-separator-line-1"></div>
+    <ul><li class="w3-container pricing-list-first"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Transactions</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Auth</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Identity</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Investments</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Assets</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Liabilities</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="assets/tick-mark.svg">Income</li></ul>
+   <div class="pricing-separator-line-2"></div>
+   <button class="pricing-request-button w3-btn w3-round-xxlarge"> Request Access</button>
+  </div>
+    </div>
+  
+  <div class="w3-container w3-center w3-m12 w3-margin ">
+    <div class="w3-container w3-cell-row">
+    <div class="w3-container w3-cell w3-mobile">
+    <P class="pricing-schedule-caption"> Ready to start? </P></div>
+    <div class="w3-container w3-cell w3-cell-middle w3-mobile">
+      <div class="w3-container  w3-padding">
+      <form onsubmit="event.preventDefault()" class="pricing-schedule-form  w3-cell-row w3-round-xxlarge">
+        <div class="w3-cell">
+     <input class="w3-round-xxlarge pricing-schedule-input" 
+     placeholder="Enter email address" required> </div>
+     <div class="w3-cell">
+     <button  class="w3-btn w3-round-xxlarge pricing-schedule-button" type="submit">
+       Schedule a Demo</button></div>
+    </form>
+  </div>
+  </div></div>
+  </div>
     Pricing
     About
     Contact
