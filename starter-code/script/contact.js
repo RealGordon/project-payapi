@@ -1,7 +1,7 @@
 const form = document.getElementById("form");
-const email = document.getElementById("email")
-const name = document.getElementById('name');
-const message = document.getElementById('message');
+const email = document.getElementById("email");
+const email2 = document.getElementById('email2');
+
 
 form.addEventListener('submit', e=> {
     e.preventDefault();
@@ -33,7 +33,8 @@ const isValidEmail = email => {
     return re.test(String(email).toLowerCase());
 };
 const validateInputs = () => {
-    const emailValue = email.value.trim()
+    const emailValue = email.value.trim();
+    const email2Value = email2.value.trim();
     
 
     if(emailValue === '') {
