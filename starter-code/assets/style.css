@@ -1,3 +1,17 @@
+/*button style */
+.pricing-schedule-input{
+    border-style: none;
+    
+  }
+  .pricing-schedule-form{
+    background-color: #fff;
+    width: fit-content;
+  }
+  .pricing-schedule-button{
+   background-color: #ba4270;
+   color:#fbfcfe
+  }
+
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -138,7 +152,7 @@ border-radius: 0px;
   padding-bottom: 0.5rem;
   font-size: 2.25rem;
   font-weight: bold;
-  color: #4a4a4a;
+  color: #36536b;
 }
 
 /* companies */
@@ -148,6 +162,8 @@ border-radius: 0px;
   padding: 4rem 5%;
   align-items: center;
   width: 100%;
+  background-color: 1b262;
+
 
 
   /*
@@ -168,18 +184,34 @@ top: 737px;
   flex: 1;
   padding: 2rem;
   /*  margin: 200px 1.25rem; */
-  margin-top: 10px;
+  margin-top: 0px;
 
   
   width: 100%;
+}
+
+.company h2{
+    padding-bottom: 0.5rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #36536b;
 }
 
 .company .image-container {
   /*  width: 90%;
     height: 65%; */
   margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
+.group{
+    flex-direction: column;
+    margin-right: 30px;
+    margin-left: 40px;
+    padding: 30px;
+    justify-content: space-between;
+}
 .company .text-container{
     margin-left: 165px;
 }
@@ -213,7 +245,7 @@ top: 737px;
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 300;
-  color: #4a4a4a;
+  color: #36536b;
 }
 
 /* UI and UX */
@@ -280,7 +312,7 @@ top: 737px;
   padding-bottom: 0.5rem;
   font-size: 2.25rem;
   font-weight: bold;
-  color: #4a4a4a;
+  color: #36536b;
 }
 
 /* Ready to start */
@@ -293,10 +325,8 @@ top: 737px;
 
   /* new */
   height: 56px;
-  width: 1110px;
   margin-left: 165px;
   margin-top: 0px;
-  border-radius: 0px;
 }
 
 .cardss {
@@ -326,7 +356,7 @@ top: 737px;
   /* padding-bottom: 0.5rem;  */
   font-size: 2.25rem;
   font-weight: bold;
-  color: #4a4a4a;
+  color: #36536b;
 }
 
 /* footer  
@@ -402,9 +432,9 @@ input {
   width: 60%;
   border-radius: 20px;
 }
-*/
 
-/*
+
+
 .footer{
     display: flex;
     display: flex;
@@ -446,4 +476,6 @@ input {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+
 */
