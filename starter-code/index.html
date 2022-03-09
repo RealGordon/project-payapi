@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"> 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
@@ -40,7 +40,9 @@
           </nav>  -->
         </div>
 
-        <button>Schedule a Demo</button>
+        <div class="w3-cell">
+          <button  class="w3-btn w3-round-xxlarge pricing-schedule-button" type="submit">
+            Schedule a Demo</button></div>
       </div>
     </header>
 
@@ -52,9 +54,38 @@
             <div class="content">
               
               <h2>Start building with our APIs for absolutely free.</h2>
+
+
+              <head>
+                <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"> 
+                <style>
+            .pricing-schedule-input{
+              border-style: none;
+              
+            }
+            .pricing-schedule-form{
+              background-color: #fff;
+              width: fit-content;
+            }
+            .pricing-schedule-button{
+             background-color: #ba4270;
+             color:#fbfcfe
+            }
+                </style> 
+            </head>
+            <div class="w3-container  w3-padding">
+                <form onsubmit="event.preventDefault()" class="pricing-schedule-form  w3-cell-row w3-round-xxlarge">
+                  <div class="w3-cell">
+               <input class="w3-round-xxlarge pricing-schedule-input" 
+               placeholder="Enter email address" required> </div>
+               <div class="w3-cell">
+               <button  class="w3-btn w3-round-xxlarge pricing-schedule-button" type="submit">
+                 Schedule a Demo</button></div>
+              </form>
+            </div>
               
 
-              <button class="one">Schedule a Demo</button>
+             
 
               <h3> 
               </h3>
@@ -95,12 +126,17 @@
 
           <div class="company center">
             <div class="image-container"></div>
+
+            <div class="group">
             <img src="./assets/shared/desktop/tesla.svg" />
             <img src="./assets/shared/desktop/microsoft.svg" />
             <img src="./assets/shared/desktop/hewlett-packard.svg" />
+          </div>
+            <div class="group">
             <img src="./assets/shared/desktop/oracle.svg" />
             <img src="./assets/shared/desktop/google.svg" />
             <img src="./assets/shared/desktop/nvidia.svg" />
+          </div>
           </div>
           </div>
 
@@ -223,9 +259,22 @@
           <div class="center">
             <div class="content">
              
-             
+              
+                
+                
+            
+            <div class="w3-container  w3-padding">
+                <form onsubmit="event.preventDefault()" class="pricing-schedule-form  w3-cell-row w3-round-xxlarge">
+                  <div class="w3-cell">
+               <input class="w3-round-xxlarge pricing-schedule-input" 
+               placeholder="Enter email address" required> </div>
+               <div class="w3-cell">
+               <button  class="w3-btn w3-round-xxlarge pricing-schedule-button" type="submit">
+                 Schedule a Demo</button></div>
+              </form>
+            </div>
 
-              <button class="one">Schedule a Demo</button>
+              
             </div>
           </div>
         </div>
