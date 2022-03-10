@@ -1,0 +1,125 @@
+.nav-top, .nav-down {
+    display: inline-flex;
+}
+
+.head-row {
+    position: absolute;
+width: 1110px;
+height: 48px;
+left: 165px;
+top: 40px;
+}
+
+.above-footer-row {
+    position: absolute;
+width: 1110px;
+height: 56px;
+left: 165px;
+top: 976px;
+
+}
+
+.footer-row {
+    position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 1128px;
+background: #1B262F;
+
+}
+
+.footer-col1 {
+    position: absolute;
+width: 432px;
+height: 38px;
+left: 164px;
+
+}
+.footer-col2 {
+width: 120px;
+height: 24px;
+left: 1050px;
+}
+
+
+.btn {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    
+    letter-spacing: -0.115385px;
+    
+    color: #FBFCFE;
+    background: #BA4270;
+box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+border-radius: 24px;
+height: 48px;
+width: 173px;
+
+}
+
+.pricing-top, .about-top, .contact-top {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+.pricing-down, .about-down, .contact-down {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FBFCFE;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.input-group {
+    height: 48px;
+    width: 100px;
+
+background: #FBFCFE;
+box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+border-radius: 24px;
+
+}
+.email-area {
+    width: 90px;
+}
+.middle-button{
+    position: absolute;
+  right: -38px;
+  z-index: 999;
+  border-radius: 24px;
+}
+
+.Ready-area {
+    left: 20px;
+
+font-family: DM Serif Display;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+/* identical to box height, or 117% */
+
+letter-spacing: -0.369231px;
+
+color: #36536B;
+}
+.head-button {
+    position: absolute;
+    right: 45px
+}
+.icon{
+    background: #FBFCFE;
+}
