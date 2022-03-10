@@ -31,7 +31,10 @@ line-height: 56px;
 letter-spacing: -0.430769px;
 }
 .pricing-plans{
+ 
   margin:auto;
+  text-align: left;
+ 
 }
 .pricing-price{
   color:#36536b;
@@ -48,8 +51,15 @@ letter-spacing: -0.430769px;
 }
 .pricing-schedule-button{
  background-color: #ba4270;
- color:#fbfcfe
+ color:#fbfcfe;
+height: 48px;
 }
+.pricing-schedule-button-mobile{
+  background-color: #ba4270;
+  color:#fbfcfe;
+  width:100%;
+ height: 48px;
+ }
 .pricing-schedule-button:hover{
   background-color: #da6d97;
   color:#fbfcfe
@@ -69,6 +79,19 @@ line-height: 56px;
 /* identical to box height, or 117% */
 letter-spacing: -0.369231px;
 }
+.pricing-schedule-caption-mobile{
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height, or 112% */
+  
+  
+  letter-spacing: -0.246154px;
+  
+  color: #36536B;
+}
 /*ul{
   list-style-image:url('../assets/tick-mark.svg');
 }*/
@@ -80,6 +103,11 @@ li{
 .pricing-schedule-input{
   border-style: none;
   
+}
+.pricing-schedule-input-mobile{
+  border-style: none;
+  width:100%;
+  height: 48px;
 }
 .pricing-separator-line-1{
   margin: 12px 0 12px;
@@ -120,10 +148,12 @@ color: rgba(54, 83, 107,0.2);
 /*   footer */
 footer{
   background-color: #1B262F;
+  margin-left:0px;
+  margin-right: 0px;
 }
 .footer{
   /*display: flex;*/
-  
+ 
   justify-content: space-around;
   align-items: center;
   
@@ -168,3 +198,51 @@ opacity: 0.7;
   color: #FBFCFE;
 }
 
+
+
+@media only screen and (max-width:992px){
+  .pricing-plans{
+  text-align: center;
+  /*width: 689px;*/
+  }
+}
+.pricing-plan-responsive img{
+  float:left;
+  margin-right: 24px;
+}
+
+.pricing-plan-mobile img{
+  width:16px; 
+  height:24px;
+  margin-right: 24px;
+}
+.pricing-plan-responsive  li.pricing-list-item-faded img{
+  float:left;
+  margin-right: 40px;
+  width:16px; 
+      height:24px;
+  opacity: 0;
+}
+.pricing-plan-mobile  li.pricing-list-item-faded img{
+  float:left;
+  margin-right: 40px;
+  width:16px; 
+      height:24px;
+  opacity: 0;
+}
+
+/* navigation*/
+.topnav a{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #36536B;
+
+mix-blend-mode: normal;
+opacity: 0.7;
+}
