@@ -8,7 +8,6 @@ html {
   width: 1440px;
   /* left: -457px;
   top: -1575px;  */
-  border-radius: 0px;
 }
 
 body {
@@ -38,17 +37,26 @@ button {
   color: white;
   border-radius: 35%;
   height: 45px;
-  width: 150px;
+  width: 170px;
   margin-right: 150px;
+}
+
+/*
+.feature-button{
+    padding-left: 0px;
+    padding-right: 20px;
+} */
+
+
+.w3-container {
+  padding-left: 0.2rem;
 }
 
 /* Header */
 
 header {
   position: relative;
-
   width: 100%;
-
   background-color: #edf3f8;
   color: #36536b;
 
@@ -99,7 +107,7 @@ header .icon {
 #start {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 0.2rem 5%;
   background-color: #edf3f8;
   color: #36536b;
   margin-left: 165px;
@@ -125,20 +133,24 @@ header .icon {
   margin: 0 auto;
 }
 
-/*
 .feature .content {
-height: 345px;
+  padding-top: 7rem;
+  font-family: "DM Serif Display";
+}
+/* height: 345px;
 width: 546px;
 left: 165px;
 top: 260px;
-border-radius: 0px;
-} */
+border-radius: 0px; */
 
 .feature h2 {
   padding-bottom: 0.5rem;
-  font-size: 2.25rem;
-  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: -0.55px;
+  font-weight: 400;
   color: #36536b;
+  font-family: "DM Serif Display";
+  line-height: 72px;
 }
 
 /* companies */
@@ -182,9 +194,16 @@ top: 737px;
   justify-content: space-between;
 }
 
-.company h2{
-    font-size: 2.25rem;
+.company h2 {
+  font-size: 2.25rem;
   font-weight: bold;
+}
+
+.company h3 {
+  font-size: 17.5px;
+  line-height: 25px;
+  font-weight: 300px;
+  color: #36536b;
 }
 
 .group {
@@ -223,8 +242,8 @@ top: 737px;
 }
 
 .section h3 {
-  font-size: 1rem;
-  line-height: 1.2;
+  font-size: 17.5px;
+  line-height: 25px;
   font-weight: 300px;
   color: #36536b;
 }
@@ -255,8 +274,15 @@ top: 737px;
   width: 445px;
   left: 165px;
   top: 1975px;
-  border-radius: 0px;
+  
 }
+
+.sections h3 {
+    font-size: 17.5px;
+    line-height: 25px;
+    font-weight: 300px;
+    color: #36536b;
+  }
 
 /* Cards Section */
 
@@ -287,6 +313,9 @@ top: 737px;
 
 .card .content {
   padding: 2.5rem 0;
+  width: 445px;
+  height: 141px;
+  padding-right: 40px;
 }
 
 .card h2 {
@@ -294,6 +323,13 @@ top: 737px;
   font-size: 2.25rem;
   font-weight: bold;
   color: #36536b;
+}
+
+.card h3{
+    font-size: 17.8px;
+    line-height: 25px;
+    font-weight: 300px;
+    color: #36536b;
 }
 
 /* Ready to start */
@@ -321,6 +357,25 @@ top: 737px;
   width: 100px;
 }
 
+.cardss h2{
+    font-size: 40px;
+  letter-spacing: -0.55px;
+  font-weight: 200px;
+  color: #36536b;
+  font-family: "DM Serif Display";
+  line-height: 72px;
+    
+}
+
+
+.ready1{
+    padding-bottom : 60px;
+}
+
+.ready2{
+    padding-top: 20px;
+    padding-left: 240px;
+}
 /*
 .cardss .image-container {
   width: 100%;
@@ -331,15 +386,12 @@ top: 737px;
 */
 
 .cardss .content {
-  padding: 2.5rem 0;
+ padding: 2.5rem 0;  
   display: flex;
+  
 }
 
-.cardss h2 {
-  /* padding-bottom: 0.5rem;  */
-  font-size: 2.25rem;
-  font-weight: bold;
-}
+
 
 /* footer  
 footer {
