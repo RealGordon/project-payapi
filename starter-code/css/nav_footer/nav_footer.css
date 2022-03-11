@@ -1,5 +1,29 @@
-.nav-top, .nav-down {
+.nav-top, .nav-down, .top-div{
     display: inline-flex;
+}
+
+.foot {
+    position: relative;
+    top: 50%
+}
+
+.dark{
+    position: absolute;
+    width: 780px;
+    height: 780px;
+    left: 800px;
+    top: -527px;
+    border-radius: 50%;
+    
+    background: #c3c7ca;
+}
+
+body{
+    background: #F2F2F2;
+}
+
+*:active {
+    cursor: pointer
 }
 
 .head-row {
@@ -24,7 +48,7 @@ top: 976px;
 width: 1440px;
 height: 100px;
 left: 0px;
-top: 1128px;
+top: 1100px;
 background: #1B262F;
 
 }
@@ -58,6 +82,7 @@ left: 1050px;
 box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 border-radius: 24px;
 height: 48px;
+z-index: 999;
 width: 173px;
 
 }
@@ -69,8 +94,8 @@ width: 173px;
     font-size: 15px;
     line-height: 18px;
     /* identical to box height */
-    color: #36536B;
-    mix-blend-mode: normal;
+    color: #a8b0b8;
+    /*mix-blend-mode: nmal;*/
     opacity: 0.7;
 }
 .pricing-down, .about-down, .contact-down {
@@ -78,8 +103,8 @@ width: 173px;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
-    color: #FBFCFE;
-    mix-blend-mode: normal;
+    color: #c3c5ca;
+    /*mix-blend-mode: normal;*/
     opacity: 0.7;
 }
 
@@ -94,7 +119,9 @@ border-radius: 24px;
 }
 .email-area {
     position: absolute;
-    width: 50%;
+    width: 75%;
+    border-radius: 24px;
+    height: 48px;
     right: 100px;  
 }
 .middle-button{
@@ -128,4 +155,19 @@ color: #36536B;
 }
 .icon{
     background: #FBFCFE;
+}
+
+.icon:active {
+    background: #DA6D97;
+}
+.icon:hover {
+    background: #DA6D97;
+}
+
+.top:active {
+    color: #36536B;
+}
+
+.btn:hover {
+    background: #DA6D97;
 }
