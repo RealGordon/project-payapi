@@ -6,31 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | PayAPI Website Challenge</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
- <!--<link rel="stylesheet" href="/resources/css/4/w3.css" />-->
+ <link rel="stylesheet" href="/resources/css/4/w3.css" />
 
-    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
-   <!--<link rel="stylesheet" href="fonts/font-awesome.min.css">-->
-   <link rel="stylesheet" 
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
+    <!-- <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">-->
+  <!--<link rel="stylesheet" 
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">-->
 
 
 
 
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">  
-  <link rel="stylesheet" href="/project-payapi/starter-code/css/pricing/pricingPageStyles.css" />
+  <link rel="stylesheet" href="/css/pricing/pricingPageStyles.css" />
     
   <script>
-    window.onresize=function(){
+    function findDoc(){
+      console.log(this.screen.width)
       var pathname=window.location.pathname,
-      desktop='/project-payapi/starter-code/pricing/desktop/pricing.html',
-      mobile='/project-payapi/starter-code/pricing/mobile/pricing.html';
-  if(this.innerWidth<600 && pathname!== mobile)return this.location=mobile;
-  if(this.innerWidth>600  && pathname!==desktop ){
+      desktop='/pricing/desktop/pricing.html',
+      tablet='/pricing/tablet/pricing.html',
+      mobile='/pricing/mobile/pricing.html';
+  if(this.screen.width<600 && pathname!== mobile)return this.location=mobile;
+  if(this.screen.width>600  && this.screen.width<992  && pathname!==tablet ){
+      return this.location=tablet;
+    }
+  if(this.screen.width>600  && pathname!==desktop ){
     return this.location=desktop;
   }
     };
 
+  
+  window.onresize=findDoc;
     /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
   var x = document.getElementById("hiddenlinks");
@@ -41,7 +47,11 @@ function myFunction() {
   }
 }
   </script>
+ 
   <style>
+    body{
+      margin:0px;
+    }
  .navigation-close-button  {
   background: black;
   display: block;
@@ -93,6 +103,16 @@ background: #FBFCFE;
 mix-blend-mode: normal;
 opacity: 0.15;
 }
+.bg-blue{
+  position: absolute;
+width: 780px;
+height: 780px;
+left: 74px;
+top: -644px;
+
+mix-blend-mode: normal;
+opacity: 0.15;
+}
   </style>
   </head>
 
@@ -100,9 +120,10 @@ opacity: 0.15;
     <nav class="w3-container"  style="margin-top:40px; ">
       <div class="w3-container w3-margin" 
      >
-      <a href="/project-payapi/" style="float: left;"> 
-      <img src="../../assets/shared/desktop/logo.svg"  >
+      <a  href="/project-payapi/" style="float: left;"> 
+      <img   src="../../assets/shared/desktop/logo.svg"  >
       </a>
+      <img  style="z-index: 1;" class="bg-blue" src="../../assets/shared/desktop/bg-pattern-circle.svg" >
       <!--  <ul class="w3-hide-small" >
             <li><a href="./pricing.html">Pricing</a></li> 
             <li><a href="./about.html">About</a></li>
@@ -111,20 +132,20 @@ opacity: 0.15;
         <div class=" w3-hide-small" >  
           <button>Schedule a Demo</button>  
        </div>-->
-      <button  class="navigation-menu-button w3-hide-large" onclick="myFunction()">
+      <button style="z-index: 2;position: relative; background-color: #edf3f8;border: none;" class="navigation-menu-button w3-hide-large" onclick="myFunction()">
     <img  src="../../assets/shared/mobile/menu.svg" ></button>
      </div>
       <div class="w3-container">
        
-       <div class="w3-container" id="hiddenlinks">
+       <div class="w3-container" id="hiddenlinks"  style="z-index: 3">
      
         <button class="navigation-close-button" onclick="myFunction()">
           <img src="../../assets/shared/mobile/close.svg" ></button>
           <div class="w3-container nav-separator"></div>
           <ul style="margin-top:123px">
         <li class="nav-list w3-container w3-margin"><a href="./pricing.html">Pricing</a></li> 
-        <li class="nav-list w3-container w3-margin"><a href="./about.html">About</a></li>
-        <li class="nav-list w3-container w3-margin"><a href="./contact.html">Contact</a></li>
+        <li class="nav-list w3-container w3-margin"><a href="../../about.html">About</a></li>
+        <li class="nav-list w3-container w3-margin"><a href="../../contact.html">Contact</a></li>
        <li> <button class="w3-btn w3-margin w3-round-xxlarge pricing-schedule-button" type="submit">
           Schedule a Demo</button></li>
     </ul>
@@ -216,7 +237,7 @@ opacity: 0.15;
       <form onsubmit="event.preventDefault()" class="w3-auto pricing-schedule-form-mobile" 
       style="width:100%;margin:auto;">
         <div class="w3-border w3-margin-bottom" style="width:100%;">
-     <input class="w3-round-xxlarge pricing-schedule-input-mobile" 
+     <input type="email" class="w3-round-xxlarge pricing-schedule-input-mobile" 
      placeholder="Enter email address" required> </div>
      <div class="" style="width:100%">
      <button  class="w3-btn w3-round-xxlarge pricing-schedule-button-mobile" type="submit">
@@ -225,11 +246,11 @@ opacity: 0.15;
   </div>
   </div>
    
-    <footer class="w3-container w3-col m12" style="margin:0px">
-      <div class="footer w3-container w3-cell-row  w3-center">
-        <div class="w3-container w3-cell w3-cell-middle w3-mobile">
-        <div class="footer-logo-menu w3-container w3-cell w3-mobile w3-margin">
-          <div class="w3-container w3-cell w3-mobile" >
+    <footer class="w3-container w3-col s12 w3-center" style="margin:auto;">
+     
+        <div class="w3-container w3-center">
+    
+          <div class="w3-container w3-margin" >
               <a href="/project-payapi/">
           <svg width="135" height="38" xmlns="http://www.w3.org/2000/svg">
       
@@ -243,19 +264,19 @@ opacity: 0.15;
             </g></g>
          
             </svg></a></div>
-          <div class="w3-container w3-cell w3-mobile"  >
-              <ul class="footer-menu w3-cell-row">
-                <li class="w3-container w3-cell w3-mobile w3-margin"
+          <div class="w3-auto w3-center"  style="margin:auto" >
+              <ul class="footer-menu w3-auto" >
+                <li class="w3-container w3-margin"
                ><a href="./pricing.html">Pricing</a></li> 
-                <li class="w3-container w3-cell w3-mobile w3-margin"
+                <li class="w3-container  w3-margin"
                 ><a href="./about.html">About</a></li>
-                <li class="w3-container w3-cell w3-mobile w3-margin" ><a href="./contact.html">Contact</a></li>
+                <li class="w3-container  w3-margin" ><a href="./contact.html">Contact</a></li>
               </ul>
           </div>
+       
         </div>
-        </div>
-        <div class="w3-container w3-cell w3-cell-middle w3-mobile">
-          <div class="w3-container w3-center" style="display:inline-flex">
+       
+          <div class="w3-container w3-center w3-margin" style="display:inline-flex">
             <div class="w3-container" style="margin-right: 12px;">
              <a href=""> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 
@@ -275,9 +296,9 @@ opacity: 0.15;
                
               </svg> </a></div>
           </div>
-          </div>
+         
                    
-      </div>
+     
       
       
     
