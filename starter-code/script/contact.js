@@ -39,8 +39,7 @@ const validateInputs = () => {
 
     if(emailValue === '') {
         setError(email, "This field can't be empty")
-    } else if (!isValidEmail(email)) {
-        setError(email, 'Provide a valid email address')
+    
     } else {
         setSuccess(email)
     }
