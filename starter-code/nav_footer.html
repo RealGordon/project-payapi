@@ -11,80 +11,75 @@
     <link href="css\nav_footer\mmenu-js-master\src\mmenu.css" rel="stylesheet" />
 
     <title>PayAPI</title>
-    <script>
-      document.ready(function () {
-        $(".menu").mmenu();
-        var API = $(".menu").data("mmenu");
-        $("#menu-button").click(function() {
-          API.open();
-        })
-      });
-  </script>
-
-
-
 
   </head>
-  <body>
-      <div class="container-fluid">
-        <div class="dark"></div>
-          <header class="head-row">
-            
-            <div class="row">
-              <div class="col col-md-8 col-xl-6 top-div">
-                <div class="col-4"><img src="assets\shared\desktop\logo.svg"></div>
-                
-              <div class="menu">
-                <ul class="nav nav-top">
-                  <li class="nav-item pricing-top top"><a class="nav-link" href="#">Pricing</a></li>
-                  <li class="nav-item about-top top"><a class="nav-link" href="#">About</a></li>
-                  <li class="nav-item contact-top top"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-              </div>
-              </div>
-              <div class="col col-md-4 col-xl-3">
-                <button class="btn btn-default head-button">Schedule a Demo</button>
-                <span><a id ="menu-button" href="#"><img src="file:///C:/Users/1GAD/Documents/Projects/project-payapi/starter-code/assets/shared/mobile/menu.svg"></a></span>
-              </div>
-              
-              
-            </div>
-          </header>
-          
-          <section>
-            <div class="row above-footer-row">
-              <div class="col col-md-6 Ready-area">
-                <span>Ready to start?</span>
-              </div>
-              <div class="col col-md-6 "><!--input-group mb-3-->
-                <input class="form-control email-area" type="text" placeholder="Enter email address">
-                <button class="btn btn-default middle-button">Schedule a Demo</button>
-              </div>
-            </div>
-          </section>
 
-          <footer class="fixed-bottom footer-row">
-            <div class="row foot">
-              <div class="col col-md-8 footer-col1">
-                <img src="assets\shared\desktop\logo.svg">
-              <ul class="nav nav-down">
-                <li class="nav-item pricing-down down"><a class="nav-link" href="#">Pricing</a></li>
-                <li class="nav-item about-down down"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item contact-down down"><a class="nav-link" href="#">Contact</a></li>
-              </ul>
+  <body>
+    <div class="dark"></div>
+      <nav class="navbar navbar-expand-sm">
+          <div class="container-fluid">
+              <a href="#" class="navbar-brand"><img src="assets\shared\desktop\logo.svg"></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navmenu">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Pricing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                  </ul>
               </div>
-              <div class="col col-md-4 footer-col2">
-                
-                  <span><a class="navlink" href="#"><img class="icon" src="assets\shared\desktop\icons8-facebook.svg"></a></span>
-                  <span><a class="navlink" href="#"><img class="icon" src="assets\shared\desktop\icons8-twitter.svg"></a></span>
-                  <span><a class="navlink" href="#"><img class="icon" src="assets\shared\desktop\icons8-linkedin.svg"></a></span>
+
+              <div class="head-button">
+                <button class="btn btn-default">Schedule a Demo</button>
               </div>
-              
-              
-            </div>
-          </footer>
-          
-      </div>
+          </div>  
+      </nav>
+
+      <section class="ready-section">
+        <div class="container-fluid">
+            <div class="row above-footer-row">
+                <div class="col Ready-area">
+                  <span">Ready to start?</span>
+                </div>
+                <div class="col email-box"><!--input-group mb-3-->
+                  <input class="form-control email-area" type="text" placeholder="Enter email address">
+                  <button class="btn btn-default middle-button">Schedule a Demo</button>
+                </div>
+              </div>
+        </div>
+      </section>
+
+     <footer class="footer-bar">
+         <div class="container-fluid">
+             <div class="left-footer">
+                <a href="#" class="navbar-brand"><img src="assets\shared\desktop\logo.svg"></a>
+                <div class="" id="navmenu-2">
+                            <a href="#" class="nav-link">Pricing</a>
+                          <a href="#" class="nav-link">About</a>
+                          <a href="#" class="nav-link">Contact</a>
+                </div>
+             </div>
+
+             <div class="footer-icons">
+                 <ul class="nav">
+                     <li class="nav-item"><a class="navlink" href="#"><img class="icon" src="assets\shared\desktop\icons8-facebook.svg"></a></li>
+                     <li class="nav-item"><a class="navlink" href="#"><img class="icon" src="assets\shared\desktop\icons8-twitter.svg"></a></li>
+                     <li class="nav-item"><a class="navlink" href="#"><img class="icon" src="assets\shared\desktop\icons8-linkedin.svg"></a></li>
+                 </ul>
+             </div>
+         </div>
+     </footer>
+  </body>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
