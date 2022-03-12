@@ -20,9 +20,9 @@
     <script>
         function findDoc(){
         var pathname=window.location.pathname,
-        desktop='/project-api/starter-code/pricing/desktop/pricing.html',
-        tablet='/project-api/starter-code/pricing/tablet/pricing.html',
-        mobile='/project-api/starter-code/pricing/mobile/pricing.html';
+        desktop='/project-payapi/starter-code/pricing/desktop/pricing.html',
+        tablet='/project-payapi/starter-code/pricing/tablet/pricing.html',
+        mobile='/project-payapi/starter-code/pricing/mobile/pricing.html';
     if(this.visualViewport.width<600 && pathname!== mobile)return this.location=mobile;
     if(this.visualViewport.width>600  && this.visualViewport.width<992  && pathname!==tablet ){
       return this.location=tablet;
