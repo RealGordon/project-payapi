@@ -23,9 +23,9 @@
     function findDoc(){
       console.log(this.screen.width)
       var pathname=window.location.pathname,
-      desktop='/project-api/starter-code/pricing/desktop/pricing.html',
-      tablet='/project-api/starter-code/pricing/tablet/pricing.html',
-      mobile='/project-api/starter-code/pricing/mobile/pricing.html';
+      desktop='/project-payapi/starter-code/pricing/desktop/pricing.html',
+      tablet='/project-payapi/starter-code/pricing/tablet/pricing.html',
+      mobile='/project-payapi/starter-code/pricing/mobile/pricing.html';
   if(this.screen.width<600 && pathname!== mobile)return this.location=mobile;
   if(this.screen.width>600  && this.screen.width<992  && pathname!==tablet ){
       return this.location=tablet;
