@@ -8,7 +8,8 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    /* border: 2px solid green; */
+     /* border: 2px solid green; */
+    /* width: 1440px; */
 
 }
 nav{
@@ -25,17 +26,20 @@ nav{
 
 #top{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
+    /* border: 1px solid red; */
+    
 }
+
 
 #buttom{
     position: absolute;
-    top: 1126px;
-    right: 0;
+    top: 1109px;
+    right: 0px;
 }
 
-#topMob, #botMob{
+#topMob, #toptab, #botMob{
     display: none;
 }
 .menu{
@@ -604,7 +608,8 @@ button:hover{
 
 @media only screen and (max-width: 1024px) {
     body {
-        width: 1000px;
+        /* width: 1000px; */
+        margin: 0;
     }
     .hOne{
         /* border: 1px solid red; */
@@ -710,7 +715,28 @@ button:hover{
         /*border: 1px solid black;*/
     }
 
-    #top, #bottom, #topMob, #botMob{
+    #top{
+        position: absolute;
+        top: 0px;
+        right: 60px;
+        /* border: 1px solid red; */
+        
+    }
+    
+    
+    #buttom{
+        position: absolute;
+        top: 1425px;
+        right: 0px;
+    }
+    #toptab {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+   
+    #top, #botMob,#topMob  {
         display: none;
     }
     .hOne{
@@ -956,6 +982,10 @@ textarea:hover{
         position: relative;
         left: -35px;
     }
+
+    footer{
+        width: 768px;
+    }
     .footer{
         /*border: 3px solid white;*/
         width: 689px;
@@ -1025,10 +1055,10 @@ textarea:hover{
         margin: 0;
         padding: 0;
         width: 375px;
-        border: 1px solid blue;        
+        /* border: 1px solid blue;         */
     }
 
-    #top, #buttom{
+    #top, #buttom, #toptab{
         display: none;
     }
 
@@ -1576,6 +1606,46 @@ footer{
         margin-left: 42px;
         margin-right: 42px;
     }
+
+    #top, #buttom, #toptab{
+        display: none;
+    }
+
+    #topMob{
+        
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    #botMob{
+        display: flex;
+        position: absolute;
+        top: 1695px;
+
+    }
+
+    @media only screen and (max-width: 390px){
+        #top, #buttom, #toptab{
+            display: none;
+        }
+    
+        #topMob{
+            
+            display: flex;
+            position: absolute;
+            top: 0px;
+            right: -35px;
+        }
+        #botMob{
+            display: flex;
+            position: absolute;
+            top: 1695px;
+    
+        }
+    
+    }
+
 
     .hOne{
         margin-left: 42px;
