@@ -5,37 +5,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | PayAPI Website Challenge</title>
-   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png" />
- <!--<link rel="stylesheet" href="/resources/css/4/w3.css" />-->
+   <link rel="icon" type="image/png" sizes="32x32" 
+   href="../../assets/favicon-32x32.png" />
+ <link rel="stylesheet" href="/resources/css/4/w3.css" />
+ <link rel="stylesheet" href="/resources/fonts/font-awesome.min.css">
+  <!--   <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+ 
+ 
+    <link rel="stylesheet" 
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
 
-     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
-  <link rel="stylesheet" 
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">-->
 
 
 
-
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" 
+  rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" 
+  rel="stylesheet" />  -->
   <link rel="stylesheet" href="../../css/pricing/pricingPageStyles.css" />
     
   <script>
     function findDoc(){
-      console.log(this.screen.width)
-      var pathname=window.location.pathname,
-      desktop='/project-payapi/starter-code/pricing/desktop/pricing.html',
-      tablet='/project-payapi/starter-code/pricing/tablet/pricing.html',
-      mobile='/project-payapi/starter-code/pricing/mobile/pricing.html';
-  if(this.screen.width<600 && pathname!== mobile)return this.location=mobile;
-  if(this.screen.width>600  && this.screen.width<992  && pathname!==tablet ){
-      return this.location=tablet;
+          var arr=window.location.pathname.split('/');
+      var mode=arr[arr.length-2];
+      var  desktop='desktop',
+        tablet='tablet',
+        mobile='mobile';
+        if((this.visualViewport.width<600 || screen.width<600 ) && mode!== mobile)return this.location=window.location.pathname.replace(mode,mobile);
+    if((this.visualViewport.width>600 || screen.width>600) && this.visualViewport.width<992  && mode!==tablet ){
+      return this.location=window.location.pathname.replace(mode,tablet);
     }
-  if(this.screen.width>600  && pathname!==desktop ){
-    return this.location=desktop;
-  }
-    };
+    if((this.visualViewport.width>992 || screen.width>992) && mode!==desktop ){
+      return this.location=window.location.pathname.replace(mode,desktop)
+    }
+      }
 
-  
+    
+     
   window.onresize=findDoc;
     /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
@@ -84,8 +90,9 @@ font-weight: bold;
 font-size: 20px;
 line-height: 24px;
 /* identical to box height */
-
+text-decoration: none;
 text-align: center;
+text-decoration-line: none;
 
 color: #FBFCFE;
 
@@ -114,6 +121,7 @@ mix-blend-mode: normal;
 opacity: 0.15;
 }
   </style>
+  <script defer>setTimeout(findDoc,5e3)</script>
   </head>
 
   <body>
@@ -123,7 +131,8 @@ opacity: 0.15;
       <a  href="/project-payapi/" style="float: left;"> 
       <img   src="../../assets/shared/desktop/logo.svg"  >
       </a>
-      <img  style="z-index: 1;" class="bg-blue" src="../../assets/shared/desktop/bg-pattern-circle.svg" >
+      <img  style="z-index: 1;" class="bg-blue" 
+      src="../../assets/shared/desktop/bg-pattern-circle.svg" >
       <!--  <ul class="w3-hide-small" >
             <li><a href="./pricing.html">Pricing</a></li> 
             <li><a href="./about.html">About</a></li>
@@ -132,7 +141,8 @@ opacity: 0.15;
         <div class=" w3-hide-small" >  
           <button>Schedule a Demo</button>  
        </div>-->
-      <button style="z-index: 2;position: relative; background-color: #edf3f8;border: none;" class="navigation-menu-button w3-hide-large" onclick="myFunction()">
+      <button 
+      style="z-index: 2;position: relative; background-color: #edf3f8;border: none;" class="navigation-menu-button w3-hide-large" onclick="myFunction()">
     <img  src="../../assets/shared/mobile/menu.svg" ></button>
      </div>
       <div class="w3-container">
@@ -142,7 +152,7 @@ opacity: 0.15;
         <button class="navigation-close-button" onclick="myFunction()">
           <img src="../../assets/shared/mobile/close.svg" ></button>
           <div class="w3-container nav-separator"></div>
-          <ul style="margin-top:123px">
+          <ul  style="margin-top:123px;border-top: 1px solid #FBFCFE;text-align: center;" >
         <li class="nav-list w3-container w3-margin"><a href="./pricing.html">Pricing</a></li> 
         <li class="nav-list w3-container w3-margin"><a href="../../about.html">About</a></li>
         <li class="nav-list w3-container w3-margin"><a href="../../contact.html">Contact</a></li>
@@ -172,16 +182,16 @@ opacity: 0.15;
     <div class="w3-auto" style="margin:auto;width:200px">
     <ul class="w3-container" style="text-align: left;">
     
-   <li class="w3-container pricing-list-first"><img  width="16" height="24" src="../../../../assets/tick-mark.svg">Transactions</li>
-   <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../../../assets/tick-mark.svg">Auth</li>
-    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../../../assets/tick-mark.svg">Identity</li>
+   <li class="w3-container pricing-list-first"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Transactions</li>
+   <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Auth</li>
+    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Identity</li>
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-      <img src="../../assets/tick-mark.svg">Investments</li>
-    <li class="pricing-list-item pricing-list-item-faded w3-opacity-max"> <img  src="../../../../assets/tick-mark.svg">Assets</li>
+      <img src="../../assets/shared/desktop/icon-check.svg">Investments</li>
+    <li class="pricing-list-item pricing-list-item-faded w3-opacity-max"> <img  src="../../assets/shared/desktop/icon-check.svg">Assets</li>
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-       <img  src="../../assets/tick-mark.svg">Liabilities</li>
+       <img  src="../../assets/shared/desktop/icon-check.svg">Liabilities</li>
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-      <img  src="../../assets/tick-mark.svg">Income</li>
+      <img  src="../../assets/shared/desktop/icon-check.svg">Income</li>
   </ul></div>
   <div class="pricing-separator-line-2"></div>
     <button class="pricing-request-button w3-btn w3-round-xxlarge">Request Access</button>
@@ -195,16 +205,16 @@ opacity: 0.15;
     <div class="pricing-separator-line-1"></div>
     <div class="w3-auto" style="margin:auto;width:210px">
     <ul class="w3-container" style="text-align: left;">
-    <li class="w3-container pricing-list-first"><img width="16" height="24" src="../../assets/tick-mark.svg">Transactions</li>
-    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/tick-mark.svg">Auth</li>
-    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/tick-mark.svg">Identity</li>
-    <li class="w3-container pricing-list-item"><img width="16" height="24" src="../../assets/tick-mark.svg">Investments</li>
-    <li class="w3-container pricing-list-item"><img width="16" height="24" src="../../assets/tick-mark.svg">Assets</li>
+    <li class="w3-container pricing-list-first"><img width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Transactions</li>
+    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Auth</li>
+    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Identity</li>
+    <li class="w3-container pricing-list-item"><img width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Investments</li>
+    <li class="w3-container pricing-list-item"><img width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Assets</li>
     
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-      <img  src="../../assets/tick-mark.svg">Liabilities</li>
+      <img  src="../../assets/shared/desktop/icon-check.svg">Liabilities</li>
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-      <img   src="../../assets/tick-mark.svg">Income</li></ul></div>
+      <img   src="../../assets/shared/desktop/icon-check.svg">Income</li></ul></div>
     <div class="pricing-separator-line-2"></div>
     <button class="pricing-request-button w3-btn w3-round-xxlarge">Request Access</button>
   </div>
@@ -215,32 +225,32 @@ opacity: 0.15;
     <p class="pricing-price"> $499.00</p></div>
     <div class="pricing-separator-line-1"></div>
     <div class="w3-auto" style="margin:auto;width:210px">
-    <ul class="w3-container" style="text-align: left;"><li class="w3-container pricing-list-first"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Transactions</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;margin-right: 24px;" width="16" height="24" src="../../assets/tick-mark.svg">Auth</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Identity</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Investments</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Assets</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Liabilities</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Income</li>
+    <ul class="w3-container" style="text-align: left;"><li class="w3-container pricing-list-first"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Transactions</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;margin-right: 24px;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Auth</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Identity</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Investments</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Assets</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Liabilities</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Income</li>
   </ul></div>
    <div class="pricing-separator-line-2"></div>
    <button class="pricing-request-button w3-btn w3-round-xxlarge"> Request Access</button>
   </div>
     </div>
   
-  <div class="w3-border w3-auto w3-col s12 w3-center" style="margin:40px auto 80px;text-align: center;">
+  <div class=" w3-auto w3-col s12 w3-center" style="margin:40px auto 80px;text-align: center;">
     
-    <div class="w3-auto w3-center w3-border" style="text-align: center;width:328px;margin:auto;">
+    <div class="w3-auto w3-center" style="text-align: center;width:328px;margin:auto;">
     <P class="pricing-schedule-caption-mobile"> Ready to start? </P></div>
-    <div class="w3-auto   w3-center w3-border" style="text-align: center;width:328px;margin:auto;">
+    <div class="w3-auto   w3-center " style="text-align: center;width:328px;margin:auto;">
     
       <form onsubmit="event.preventDefault()" class="w3-auto pricing-schedule-form-mobile" 
       style="width:100%;margin:auto;">
-        <div class="w3-border w3-margin-bottom" style="width:100%;">
+        <div class="w3-margin-bottom" style="width:100%;">
      <input type="email" class="w3-round-xxlarge pricing-schedule-input-mobile" 
      placeholder="Enter email address" required> </div>
      <div class="" style="width:100%">
-     <button  class="w3-btn w3-round-xxlarge pricing-schedule-button-mobile" type="submit">
+     <button class="w3-btn w3-round-xxlarge pricing-schedule-button-mobile"  type="submit">
        Schedule a Demo</button></div>
     </form>
   </div>

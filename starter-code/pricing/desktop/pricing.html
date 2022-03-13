@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | PayAPI Website Challenge</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png" />
-    <!--<link rel="stylesheet" href="/css/contact/style.css">
-    <link rel="stylesheet" href="/resources/css/4/w3.css" />-->
+    <link rel="stylesheet" href="/css/contact/style.css">
+  <link rel="stylesheet" href="/resources/css/4/w3.css" />
+       <link rel="stylesheet" href="/resources/fonts/font-awesome.min.css">
+    <!-- <link rel="stylesheet" 
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
  
-   <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
-   <!--<link rel="stylesheet" href="/resources/fonts/font-awesome.min.css">-->
-   <link rel="stylesheet" 
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
+   <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">-->
+
+  
 
 
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
@@ -19,22 +21,25 @@
   <link rel="stylesheet" href="../../css/pricing/pricingPageStyles.css" />
     <script>
         
-      function findDoc(){
-        var pathname=window.location.pathname,
-        desktop='/project-payapi/starter-code/pricing/desktop/pricing.html',
-        tablet='/project-payapi/starter-code/pricing/tablet/pricing.html',
-        mobile='/project-payapi/starter-code/pricing/mobile/pricing.html';
-    if(this.visualViewport.width<600 && pathname!== mobile)return this.location=mobile;
-    if(this.visualViewport.width>600  && this.visualViewport.width<992  && pathname!==tablet ){
-      return this.location=tablet;
+        function findDoc(){
+          var arr=window.location.pathname.split('/');
+          
+      var mode=arr[arr.length-2];
+      var  desktop='desktop',
+        tablet='tablet',
+        mobile='mobile';
+        if((this.visualViewport.width<600 || screen.width<600 ) && mode!== mobile)return this.location=window.location.pathname.replace(mode,mobile);
+    if((this.visualViewport.width>600 || screen.width>600) && this.visualViewport.width<992  && mode!==tablet ){
+      return this.location=window.location.pathname.replace(mode,tablet);
     }
-    if(this.visualViewport.width>600  && pathname!==desktop ){
-      return this.location=desktop;
+    if((this.visualViewport.width>992 || screen.width>992) && mode!==desktop ){
+      return this.location=window.location.pathname.replace(mode,desktop)
     }
       }
      
      
-
+      
+     
 window.onresize=findDoc;
       /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
@@ -46,6 +51,19 @@ function myFunction() {
   }
 }
     </script>
+<style>
+.bg{
+position: absolute;
+width: 780px;
+height: 780px;
+left: 800px;
+top: -527px;
+z-index: 1;
+mix-blend-mode: normal;
+opacity: 0.15;
+}
+    </style>
+    <script defer>setTimeout(findDoc,5e3)</script>
   </head>
 
   <body>
@@ -61,8 +79,10 @@ function myFunction() {
           <li><a href="../../about.html">About</a></li>
           <li><a href="../../contact.html">Contact</a></li>
       </ul>
-      <div style="float:right;" >  
-        <button>Schedule a Demo</button>  
+      <img  style="z-index: 1;" class="bg" 
+      src="../../assets/shared/desktop/bg-pattern-circle.svg" >
+      <div  style="float:right;z-index: 2;position: relative;" >  
+        <button  class="w3-btn w3-round-xxlarge pricing-schedule-button">Schedule a Demo</button>  
      </div>
   </div>
  
@@ -75,7 +95,7 @@ function myFunction() {
  
     <div class="w3-container w3-row pricing-plans" >
     <div class="w3-container  w3-content">
-      <h2 class="pricing-header w3-content w-col m1 w3-border" style="text-align: left;">Pricing</h2>
+      <h2 class="pricing-header w3-content w-col m1" style="text-align: left;">Pricing</h2>
       <div class="w3-container w3-col m4  pricing-plan-responsive" >
     <div  class="pricing-header-section">
     <h3 class="pricing-plan-caption">Free Plan</h3>
@@ -85,16 +105,16 @@ function myFunction() {
     <div class="pricing-separator-line-1"></div>
     <ul class="w3-container">
     
-   <li class="w3-container pricing-list-first"><img  width="16" height="24" src="../../assets/tick-mark.svg">Transactions</li>
-   <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/tick-mark.svg">Auth</li>
-    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/tick-mark.svg">Identity</li>
+   <li class="w3-container pricing-list-first"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Transactions</li>
+   <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Auth</li>
+    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Identity</li>
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-      <img src="../../assets/tick-mark.svg">Investments</li>
-    <li class="pricing-list-item pricing-list-item-faded w3-opacity-max"> <img  src="../../assets/tick-mark.svg">Assets</li>
+      <img src="../../assets/shared/desktop/icon-check.svg">Investments</li>
+    <li class="pricing-list-item pricing-list-item-faded w3-opacity-max"> <img  src="../../assets/shared/desktop/icon-check.svg">Assets</li>
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-       <img  src="../../assets/tick-mark.svg">Liabilities</li>
+       <img  src="../../assets/shared/desktop/icon-check.svg">Liabilities</li>
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-      <img  src="../../assets/tick-mark.svg">Income</li>
+      <img  src="../../assets/shared/desktop/icon-check.svg">Income</li>
   </ul>
   <div class="pricing-separator-line-2"></div>
     <button class="pricing-request-button w3-btn w3-round-xxlarge">Request Access</button>
@@ -108,16 +128,16 @@ function myFunction() {
     <div class="pricing-separator-line-1"></div>
     <ul class="w3-container">
     <li class="w3-container pricing-list-first"><img width="16" height="24" 
-      src="../../assets/tick-mark.svg">Transactions</li>
-    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/tick-mark.svg">Auth</li>
-    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/tick-mark.svg">Identity</li>
-    <li class="w3-container pricing-list-item"><img width="16" height="24" src="../../assets/tick-mark.svg">Investments</li>
-    <li class="w3-container pricing-list-item"><img width="16" height="24" src="../../assets/tick-mark.svg">Assets</li>
+      src="../../assets/shared/desktop/icon-check.svg">Transactions</li>
+    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Auth</li>
+    <li class="w3-container pricing-list-item"><img  width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Identity</li>
+    <li class="w3-container pricing-list-item"><img width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Investments</li>
+    <li class="w3-container pricing-list-item"><img width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Assets</li>
     
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-      <img  src="../../assets/tick-mark.svg">Liabilities</li>
+      <img  src="../../assets/shared/desktop/icon-check.svg">Liabilities</li>
     <li class="pricing-list-item pricing-list-item-faded w3-opacity-max">
-      <img   src="../../assets/tick-mark.svg">Income</li></ul>
+      <img   src="../../assets/shared/desktop/icon-check.svg">Income</li></ul>
     <div class="pricing-separator-line-2"></div>
     <button class="pricing-request-button w3-btn w3-round-xxlarge">Request Access</button>
   </div>
@@ -127,13 +147,13 @@ function myFunction() {
     <p class="pricing-plan-description w3-hide-small">Get tailored solutions, volume pricing, and dedicated support for your team</p>
     <p class="pricing-price"> $499.00</p></div>
     <div class="pricing-separator-line-1"></div>
-    <ul class="w3-container"><li class="w3-container pricing-list-first"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Transactions</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;margin-right: 24px;" width="16" height="24" src="../../assets/tick-mark.svg">Auth</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Identity</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Investments</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Assets</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Liabilities</li>
-   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/tick-mark.svg">Income</li></ul>
+    <ul class="w3-container"><li class="w3-container pricing-list-first"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Transactions</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;margin-right: 24px;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Auth</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Identity</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Investments</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Assets</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Liabilities</li>
+   <li class="w3-container pricing-list-item"><img style="float:left;" width="16" height="24" src="../../assets/shared/desktop/icon-check.svg">Income</li></ul>
    <div class="pricing-separator-line-2"></div>
    <button class="pricing-request-button w3-btn w3-round-xxlarge"> Request Access</button>
   </div>
