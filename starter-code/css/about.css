@@ -63,218 +63,117 @@ nav {
   line-height: 56px;
   letter-spacing: -0.43px;
   margin-bottom: 51px;
-  margin-left: 140px;
+  margin-left: 260px;
   margin-right: 260px;
   padding-right: 40px;
   width: 730px;
   height: 189px;
 }
 
-.w3-twothird p {
-  font-family: "Public Sans";
-  width: 635px;
-  height: 84px;
-  margin-left: 100px;
-  size: 15px;
-  line-height: 28px;
+/* mission */
+.mission {
+  margin-bottom: 100px;
+  margin-left: 260px;
+  margin-right: 260px;
 }
-
-.tops {
-  margin-left: 140px;
-  margin-right: 100px;
+.miss1 {
   width: 920px;
   height: 112px;
-  background-color: #edf3f8;
-  margin-bottom: 250px;
-}
-
-.tops h2 {
-  font-family: "DM Serif Display";
-  width: 255px;
-  height: 40px;
-  size: 32px;
-  line-height: 40px;
-  letter-spacing: -0.25px;
-  color: #36536b;
-}
-
-.tops p {
-  padding-left: 90px;
-  color: #6c8294;
-  font-family: "Public Sans";
-}
-
-.img1 {
-  margin-bottom: 72px;
-}
-
-.tags {
   display: flex;
-  justify-items: start;
-}
-
-.lay {
-  margin-left: 82.5px;
-}
-
-.lay1 {
-  padding-right: 20px;
-}
-
-hr {
-  background-color: #36536b;
-  padding: 1px;
-  opacity: 25%;
-  width: 350px;
-}
-
-.image {
-  margin-bottom: 72px;
-  width: 1440px;
-  height: 500px;
-  margin: 0;
-  background: #d8d8d8;
-}
-
-.grid {
-  margin-bottom: 72px;
-  /* border-top: #6c8294 1px solid; */
-}
-
-.grid #w3 {
-  border-top: #36536b 1px solid;
-}
-
-.grid #w2 {
-  border-top: #36536b 1px solid;
-}
-
-.grid #w1 {
-  border-top: #36536b 1px solid;
-  /* width: 10px; */
-}
-
-/* grids with gaps */
-.grid-container {
-  display: grid;
-  column-gap: 30px;
-  grid-template-columns: auto auto auto;
-  padding: 17px;
-  margin-left: 82.5px;
-  margin-right: 82.5px;
-  margin-bottom: 72px;
-}
-
-.grid-item {
-  padding: 20px;
   text-align: justify;
-  border-top: #36536b 1px solid;
-  border-bottom: #36536b 1px solid;
+  justify-content: space-between;
+  margin-bottom: 56px;
 }
 
-.sub {
-  margin-left: 130px;
-}
-.w3-third {
-  width: 225px;
+.miss1 h2 {
+  width: 350px;
   height: 40px;
-  letter-spacing: -0.25px;
-  size: 32px;
+  font-family: "DM Serif Display";
+  font-size: 32px;
   line-height: 40px;
+  letter-spacing: -0.25px;
+  margin-right: 0;
+  font-weight: 400;
+  /* margin-top: 10px; */
 }
-.sub h2 {
+
+.miss1 p {
+  width: 635px;
+  height: 112px;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6c8294;
+}
+
+/* 2nd miss */
+
+.miss2 {
+  width: 920px;
+  height: 112px;
+  display: flex;
+  text-align: justify;
+  justify-content: space-between;
+}
+
+.miss2 h2 {
+  width: 350px;
+  height: 40px;
   font-family: "DM Serif Display";
-  color: #36536b;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.25px;
+  margin-right: 0;
+  font-weight: 400;
+  /* margin-top: 10px; */
 }
 
-.sub1 {
-  margin-left: 130px;
-  margin-bottom: 100px;
-  margin-top: 72px;
-}
-.sub1 h2 {
-  font-family: "DM Serif Display";
-  color: #36536b;
-}
-
-.vision {
-  margin-bottom: 52px;
+.miss2 p {
+  width: 635px;
+  height: 112px;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6c8294;
 }
 
-.business {
-  margin-bottom: 100px;
-}
+/* mission end */
 
-.ready {
+/* team */
+.teams {
+  width: 110px;
+  height: 134px;
+  margin-left: 127px;
+  margin-right: 127px;
   display: flex;
   justify-content: space-between;
-  margin-left: 82.5px;
-  margin-bottom: 96px;
-  margin-right: 82.5px;
+  margin-bottom: 72px;
 }
 
-.ready h1 {
-  color: #36536b;
+.teams h2 {
+  width: 350px;
+  height: 72px;
   font-family: "DM Serif Display";
-  size: 48px;
-  line-height: 56px;
-  letter-spacing: -0.37px;
-  width: 445px;
-  height: 56px;
-}
-
-#view {
-  font-family: "DM Serif Display";
-  font-size: 2rem;
-  color: #36536b;
-}
-#team {
-  color: #6c8294;
-}
-
-.text {
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.43px;
   color: #ba4270;
-  font-size: 4rem;
-  font-family: "DM Serif Display";
-  margin: 0;
 }
 
-.team {
-  margin: 0px;
+.teams p {
+  width: 350px;
+  height: 28px;
+  color: #36536b;
+  opacity: 70%;
 }
 
-#items {
-  color: #6c8294;
-}
-
-#paragraph {
-  color: #6c8294;
-}
-
-#lay1 {
-  margin-right: 2rem;
-}
-
-.pricing-schedule-input {
-  border-style: none;
-}
-.pricing-schedule-form {
-  background-color: #fff;
-  width: fit-content;
-}
-.pricing-schedule-button {
-  background-color: #ba4270;
-  color: #fbfcfe;
-}
-
-#ready {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  font-family: "DM Serif Display";
-}
-
-#ready p {
-  font-size: 3rem;
+.teams hr {
+  width: 320px;
+  height: -0.5px;
+  color: #36536b;
+  opacity: 25%;
 }
 
 /* main end */
@@ -297,97 +196,422 @@ hr {
     margin-bottom: 40px;
   }
 
-  .sub {
-    display: flex;
-    text-align: center;
+  .miss1 {
     width: 327px;
     height: 244px;
     margin-left: 24px;
     margin-right: 24px;
+    display: block;
+    text-align: center;
+    margin-bottom: 48px;
   }
 
-  .sub h2 {
+  .miss1 h2 {
     width: 255px;
     height: 32px;
-    margin-left: 36px;
-    margin-right: 36px;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.18px;
-    text-align: center;
-    margin-bottom: 16px;
-  }
-
-  .sub #paragraph {
-    display: flex;
-    justify-content: center;
-    width: 327px;
-    height: 196px;
-    font-size: 15px;
-    line-height: 15px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 50px;
-    font-style: normal;
-    /* letter-spacing: -0.1; */
-  }
-
-  .sub1 h2 {
-    width: 255px;
-    height: 32px;
-    margin-left: 36px;
-    margin-right: 36px;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.18px;
-    text-align: center;
-    margin-bottom: 16px;
-  }
-
-  .sub1 #paragraph {
-    display: flex;
-    justify-content: center;
-    width: 327px;
-    height: 196px;
-    font-size: 15px;
-    line-height: 15px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 50px;
-    font-style: normal;
-    /* letter-spacing: -0.1; */
-  }
-
-  /* .sub {
-    margin-left: 130px;
-  }
-  .w3-third {
-    width: 225px;
-    height: 40px;
-    letter-spacing: -0.25px;
-    size: 32px;
+    font-family: "DM Serif Display";
+    font-size: 32px;
     line-height: 40px;
+    letter-spacing: -0.18px;
+    margin-right: 36px;
+    margin-left: 36px;
+    font-weight: 400;
+    text-align: center;
   }
-  .sub h2 {
+
+  .miss1 p {
+    width: 327px;
+    height: 196px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6c8294;
+  }
+
+  /* 2nd miss */
+
+  .miss2 {
+    width: 327px;
+    height: 244px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: block;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .miss2 h2 {
+    width: 255px;
+    height: 32px;
     font-family: "DM Serif Display";
-    color: #36536b;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.18px;
+    margin-right: 36px;
+    margin-left: 36px;
+    font-weight: 400;
+    text-align: center;
   }
-  
-  .sub1 {
-    margin-left: 130px;
-    margin-bottom: 100px;
-    margin-top: 72px;
+
+  .miss2 p {
+    width: 327px;
+    height: 196px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6c8294;
   }
-  .sub1 h2 {
+
+  /* for image */
+  .image {
+    width: 375px;
+    height: 300px;
+    background: none;
+    margin-bottom: 270px;
+  }
+
+  /* for teams */
+
+  /* team */
+  .teams {
+    width: 327px;
+    height: 398px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: block;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+
+  .teams .t1 {
+    width: 327px;
+    height: 100px;
+  }
+
+  .teams h2 {
+    width: 327px;
+    height: 72px;
     font-family: "DM Serif Display";
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.43px;
+    color: #ba4270;
+  }
+
+  .t1 h2 {
+    margin-top: 5px;
+    margin-bottom: 72px;
+  }
+
+  .t2 p {
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+
+  .t2 h2 {
+    margin-top: 10px;
+    margin-bottom: 32px;
+  }
+
+  .t3 h2 {
+    margin-top: 28px;
+    margin-bottom: 32px;
+  }
+
+  .teams p {
+    width: 327px;
+    height: 28px;
     color: #36536b;
-  } */
+    opacity: 70%;
+  }
+
+  .teams .hr1 {
+    width: 327px;
+    height: -0.5px;
+    color: #36536b;
+    opacity: 25%;
+  }
+
+  .teams .hr2 {
+    display: none;
+  }
+  /* teams end */
 }
 
 @media only screen and (max-width: 768px) {
+  #title h1 {
+    display: flex;
+    /* display: block; */
+    text-align: center;
+    width: 573px;
+    height: 178px;
+    margin-left: 97px;
+    margin-right: 97px;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    /* font-weight: normal; */
+    margin-bottom: 54px;
+  }
+
+  /* mission */
+  .mission {
+    margin-bottom: 92px;
+  }
+
+  .miss1 {
+    width: 689px;
+    height: 140px;
+    margin-left: 39px;
+    margin-right: 40px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+  .miss1 h2 {
+    width: 223px;
+    height: 40px;
+    font-family: "DM Serif Display";
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    margin-right: 0;
+    font-weight: 400;
+    /* margin-top: 10px; */
+  }
+
+  .miss1 p {
+    width: 456px;
+    height: 140px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6c8294;
+  }
+
+  /* 2nd miss */
+
+  .miss2 {
+    width: 689px;
+    height: 140px;
+    margin-left: 39px;
+    margin-right: 40px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+  .miss2 h2 {
+    width: 223px;
+    height: 40px;
+    font-family: "DM Serif Display";
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    margin-right: 0;
+    font-weight: 400;
+    /* margin-top: 10px; */
+  }
+
+  .miss2 p {
+    width: 456px;
+    height: 140px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6c8294;
+  }
+
+  /* mission end */
+
+  /* for image */
+  .image {
+    width: 769px;
+    height: 267px;
+    background: none;
+    margin-bottom: 250px;
+  }
+
+  /* for teams */
+
+  /* team */
+  .teams {
+    width: 689px;
+    height: 134px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+  .teams h2 {
+    width: 223px;
+    height: 72px;
+    font-family: "DM Serif Display";
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.43px;
+    color: #ba4270;
+  }
+
+  .teams p {
+    /* width: 350px; */
+    height: 16px;
+    color: #36536b;
+    opacity: 0.7;
+  }
+
+  .teams hr {
+    width: 223px;
+    height: 1px;
+    color: #36536b;
+    opacity: 0.25;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
+  #title h1 {
+    display: flex;
+    /* display: block; */
+    text-align: center;
+    width: 720px;
+    height: 189px;
+    margin-left: 83px;
+    margin-right: 83px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.43px;
+    /* font-weight: normal; */
+    margin-bottom: 51px;
+  }
+
+  /* mission */
+  .mission {
+    margin-bottom: 100px;
+  }
+
+  .miss1 {
+    width: 921px;
+
+    margin-left: 82.5px;
+    margin-right: 82.5px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    /* margin-bottom: 56px; */
+  }
+
+  .miss1 h2 {
+    width: 255px;
+    height: 40px;
+    font-family: "DM Serif Display";
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    margin-right: 0;
+    font-weight: 400;
+    /* margin-top: 10px; */
+  }
+
+  .miss1 p {
+    width: 635px;
+    height: 112px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6c8294;
+  }
+
+  /* 2nd miss */
+
+  .miss2 {
+    width: 921px;
+    height: 40;
+    margin-left: 82.5px;
+    margin-right: 82.5px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .miss2 h2 {
+    width: 255px;
+    height: 40px;
+    font-family: "DM Serif Display";
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    margin-right: 0;
+    font-weight: 400;
+    /* margin-top: 10px; */
+  }
+
+  .miss2 p {
+    width: 635px;
+    height: 112px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6c8294;
+  }
+
+  /* mission end */
+
+  /* for image */
+  .image {
+    /* width: 1140px; */
+    height: 500px;
+    background: none;
+    margin-bottom: 72px;
+  }
+
+  /* for teams */
+
+  /* team */
+  .teams {
+    width: 689px;
+    height: 134px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+  .teams h2 {
+    width: 223px;
+    height: 72px;
+    font-family: "DM Serif Display";
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.43px;
+    color: #ba4270;
+  }
+
+  .teams p {
+    /* width: 350px; */
+    height: 16px;
+    color: #36536b;
+    opacity: 0.7;
+  }
+
+  .teams hr {
+    width: 223px;
+    height: 1px;
+    color: #36536b;
+    opacity: 0.25;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -402,6 +626,108 @@ hr {
   top: -100px;
   left: 1100px;
   margin: 0;
+}
+
+.footer {
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1b262f;
+  color: #fbfcfe;
+  margin: 0;
+  height: 100px;
+  font-family: "Public Sans", sans-serif;
+}
+
+.f-foot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer ul {
+  display: flex;
+}
+
+.footer li {
+  margin-left: 25px;
+  margin-right: 25px;
+  list-style-type: none;
+}
+.footer a {
+  text-decoration: none;
+  color: #fbfcfe;
+}
+
+.f-footSvg svg {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+button {
+  background-color: #ba4270;
+  color: #fbfcfe;
+  border-radius: 24px;
+  border: 0px;
+  cursor: pointer;
+  padding: 8px;
+  width: 173px;
+  height: 48px;
+  z-index: 100;
+}
+button:hover {
+  background-color: #da6d97;
+}
+
+.RTS {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px 0 60px 0;
+  height: 56px;
+}
+
+.RTS form {
+  height: 48px;
+  margin-bottom: 27px;
+}
+
+.RTS h2 {
+  font-family: DM Serif Display;
+  font-size: 40px;
+  line-height: 56px;
+  line-height: 85%;
+  letter-spacing: -0.37px;
+  margin-left: 86px;
+}
+
+.RTS input[type="text"] {
+  color: #36536b;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  background: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  font-size: 15px;
+  border-radius: 24px;
+  padding-left: 30px;
+  width: 250px;
+  height: 40px;
+}
+
+.RTS input[type="submit"] {
+  position: relative;
+  left: -60px;
+  background-color: #ba4270;
+  color: #fbfcfe;
+  border-radius: 25px;
+  border: 0px;
+  cursor: pointer;
+  width: 150px;
+  height: 48px;
+}
+
+.RTS input[type="submit"]:hover {
+  background-color: #da6d97;
 }
 
 .footer {
@@ -580,37 +906,42 @@ button:hover {
     margin: 30px 300px 30px;
   }
 
-  .RTS {
-    /*border: 1px solid green;*/
-    display: block;
-    width: 445px;
-    height: 144px;
-  }
-
   .RTS h2 {
-    margin: 0px 0px 40px 0px;
     font-family: DM Serif Display;
     font-size: 40px;
+    line-height: 56px;
     line-height: 85%;
     letter-spacing: -0.37px;
-    text-align: center;
+    margin-left: 86px;
   }
 
-  .RTS form {
-    display: flex;
-    margin: 0px 2px 0px 62px;
+  .RTS input[type="text"] {
+    color: #36536b;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    background: #fbfcfe;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    font-size: 15px;
+    border-radius: 24px;
+    padding-left: 30px;
+    width: 250px;
+    height: 40px;
+  }
+
+  .RTS input[type="submit"] {
+    position: relative;
+    left: -60px;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    border-radius: 25px;
+    border: 0px;
+    cursor: pointer;
+    width: 150px;
     height: 48px;
   }
 
-  /* .RTS input[type="text"] { */
-  /*background-color: red;*/
-  /* } */
-
-  .RTS input[type="submit"] {
-    margin: 0px;
-    width: 173px;
-    position: relative;
-    left: -35px;
+  .RTS input[type="submit"]:hover {
+    background-color: #da6d97;
   }
 }
 
