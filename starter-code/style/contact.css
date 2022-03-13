@@ -8,14 +8,47 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
+    /* border: 2px solid green; */
 
 }
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Public Sans', sans-serif;
+    /* border: 1px solid red; */
+    width: 1110px;
+    height: 48px;
+    margin: 40px 165px 0px 165px; 
     
+}
+
+#top{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#buttom{
+    position: absolute;
+    top: 1126px;
+    right: 0;
+}
+
+#topMob, #botMob{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+nav ul{
+    /* border: 1px solid yellow; */
+    
+}
+nav li:hover{
+    font-weight: bold;
+
 }
 
 .mobile{
@@ -25,17 +58,22 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0px;
 }
 
 .navBar button {
     height: 30px;
+    background-image: url('../assets/shared/desktop/bg-pattern-circle.svg');
 }
 .navBar ul{
     display: flex;
-    
+    width: 232px;
+    height: 18px;
 }
+    
+
 .navBar li{
-    margin: 35px;
+    margin: 0px 40px 0px 0px;
     list-style-type: none;
 }
 
@@ -59,9 +97,19 @@ nav{
     margin: 0;
 }
 
+.navBar-link{
+    z-index: 100;
+}
+
 /*Desktp View*/
+.hOne{
+    /* border: 1px solid red; */
+    width: 730px;
+    height: 133px;
+    margin: 82px 545px 43px 165px;
+}
 .hOne h1{
-    margin-left: 260px;
+    margin: 0px;
     font-family: DM Serif Display;
     font-style: normal;
     font-weight: normal;
@@ -79,18 +127,28 @@ nav{
 
 .middle{
     display: flex;    
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 1110px;
+    height: 499px;
+    /* border: 2px solid black; */
+    margin: 0px 0px 93px 165px;
 }
 .middle-left{
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* border: 1px solid green; */
+    width:  445px;
+    height: 499px;
 }
 
-form{
-    margin-left: 165px;
+
+.middle-left form{
+    margin: 0px;
     font-family: 'Public Sans', sans-serif;
+    /* border: 1px solid blue; */
+    height: 499px;
 }
 input{
     
@@ -216,12 +274,14 @@ textarea:hover{
 
 .diff-nt{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin: 24px 0px 24px 0px;
 }
 
 label{
     font-size: 15px;
+    color: #36536B;
     width: 395px;
     height: 50px;
     line-height: 25px;
@@ -237,10 +297,9 @@ label{
       border-radius: 86px;
       cursor: pointer;
       padding: 8px;
-      width: 153px;
+      width: 152px;
       height: 48px;
-      margin-left: 20px;
-      margin-top: 20px;
+      margin: 0px;
   }
  
   input[type=submit]:hover{
@@ -268,11 +327,12 @@ label{
 /**/
 .middle-right{
     display: flex;
-    width: 45%;
+    width: 541px;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    /* border: 1px solid blue; */
     
 }
 
@@ -310,16 +370,19 @@ label{
      line-height: 56px;
      line-height: 85%;      
      letter-spacing: -0.37px;
-     margin-left: 86px;
+     margin: 0px;
  }
 
  .RTS input[type=text] {
+     position: relative;
+     left: 56px;
    color: #36536B;
    mix-blend-mode: normal;
    opacity: 0.5;
    background: #FBFCFE;
    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
    font-size: 15px;
+   border: 1px solid rgb(161, 161, 161);
    border-radius: 24px;
    padding-left: 30px;
    width: 250px;
@@ -329,7 +392,7 @@ label{
 
  .RTS input[type=submit]{
      position: relative;
-     left: -60px;
+     left: 0px;
      background-color: #BA4270;
    color:  #FBFCFE;
      border-radius: 25px;
@@ -343,19 +406,24 @@ label{
    background-color: #DA6D97;
 }
  
-.footer{
-    display: flex;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #1B262F;
-    color: #FBFCFE;
+footer{     
+    background-color: #1B262F;    
     margin: 0;
     height: 100px;
-    font-family: 'Public Sans', sans-serif;
+    display: flex;
+    
 }
 
-
+.footer{
+    color: #FBFCFE;
+    font-family: 'Public Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1111px;
+    height: 38px;
+    margin: 31px 165px 31px 164px;
+}
 .f-foot{
     display: flex;
     justify-content: space-around;
@@ -375,14 +443,25 @@ label{
     list-style-type: none;
 
 }
+
+.footer li:hover{
+    font-weight: bold;
+}
 .footer a{
     text-decoration: none;
     color: #FBFCFE;
 }
-
+.f-footSvg{
+    z-index: 100;
+}
 .f-footSvg svg{
     margin-left: 10px;
     margin-right: 10px;
+    z-index: 1;
+}
+
+.f-footSvg svg:hover path{
+    fill: #DA6D97;
 }
 button{
     background-color: #BA4270;
@@ -402,31 +481,33 @@ button:hover{
 
   .RTS{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      margin: 60px 0 60px 0;
-      height: 56px;  
-
+      margin: 0px 165px 96px 165px;
+      height: 56px;
+      width: 1110px;
+      /* border: 1px solid red; */
       
   }
 
   .RTS form {
-      height: 48px;
-      margin-bottom: 27px;
+      height: 48px;      
   }
 
  
 
 /*Tablet View*/
+
 @media only screen and (max-width: 1200px) {
 
     body {
-        width: 1195px;
+        margin: 0px;
     }
   
 .middle{
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 .middle-left{
     display: flex;
@@ -435,6 +516,7 @@ button:hover{
 .mobile{
     display: none;
 }
+
 .hOne h1{
     
     font-family: DM Serif Display;
@@ -524,8 +606,14 @@ button:hover{
     body {
         width: 1000px;
     }
+    .hOne{
+        /* border: 1px solid red; */
+        width: 730px;
+        height: 133px;
+        margin: 82px 545px 43px 165px;
+    }
     .hOne h1{
-        margin-left: 98px;
+        margin: 0px;
     }
   
     .mobile {
@@ -569,18 +657,61 @@ button:hover{
     position: relative;
     left: -35px;
 }
+/* @media only screen and (max-width: 820px){
+    body{
+        width: 820px;
+        height: 1180px;
+    }
+    nav{
+        margin: 40px 65px 0px 65px;
+        width: 689px;
+    }
+
+    .hOne{
+        margin: 0px 90px 0px 90px;
+        height: 54px;
+        width: 640px;
+        
+    }
+
+    .hOne h1{
+        font-size: 24px;
+        height: 54px;
+        width: 640px;
+    }
+    .middle{
+        margin: 0px;
+        width: 820px;
+    }
+
+    .middle-left{
+        width: 820px;
+        margin: 0px;
+
+    }
+} */
+
+.footer{
+    margin: 0px;
+    width: 689px;
+}
 }
 
 /*tablet view*/
 @media only screen and (max-width: 768px) {
     body {
         width:  768px;
+
     }
     nav{
         width: 689px;
         height: 48px;
         margin: 40px 40px 0px 39px;
         /*border: 1px solid black;*/
+    }
+
+    #top, #bottom, #topMob, #botMob{
+        display: none;
     }
     .hOne{
         width: 573px;
@@ -604,9 +735,12 @@ button:hover{
         display: block;
         /*border: 1px solid green;*/
         height: 771px;
+        width: 541px;
+        margin: 0px 114px 0px 114px;
     }
     .middle-left{
         /*border: 1px solid red;*/
+        margin: 0px 48px 0px 48px;
 
     }
     .middle-left form{
@@ -650,6 +784,7 @@ form input[type=text] {
       font-size: 15px;
       width: 277px;
       height: 50px;
+      color: #36536B;
   }
   input[type=text]:focus {
     border-color: rgb(255, 64, 64);
@@ -661,6 +796,17 @@ form input[type=text] {
     color: rgb(255, 64, 64);
   }
   
+  input[type=submit]{
+    background-color: #EDF3F8;
+    border: 1px solid #36536B;
+    border-radius: 86px;
+    cursor: pointer;
+    padding: 8px;
+    width: 152px;
+    height: 48px;
+    margin: 0px;
+    margin-top: 24px;
+  }
   
 .message-mobile{
     height: 89px;
@@ -740,7 +886,7 @@ textarea:hover{
     .middle-right{
         display: block;
         /*border: 1px solid blue;*/
-        margin: 64px 113px 0px 114px;
+        margin: 64px 0px 0px 0px;
     }
 
     .sGv{
@@ -756,7 +902,7 @@ textarea:hover{
         font-size: 24px;
         line-height: 32px;
         width: 445px;
-        margin: 0px;
+        margin: 0px 48px 0px 48px;
         text-align: center;
         /* margin-top: 70px; */
         letter-spacing: -0.184615px;
@@ -787,7 +933,21 @@ textarea:hover{
     }
 
     .RTS input[type=text]{
-        /*background-color: red;*/
+            /* background-color: red; */
+            position: relative;
+            left: 0px;
+            color: #36536B;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            background: #FBFCFE;
+            box-shadow: 10px 10px 25px -10px rgb(54 83 107 / 25%);
+            font-size: 15px;
+            border: 1px solid rgb(161, 161, 161);
+            border-radius: 24px;
+            padding-left: 30px;
+            width: 250px;
+            height: 40px;
+    
     }
 
     .RTS input[type=submit] {
@@ -798,10 +958,13 @@ textarea:hover{
     }
     .footer{
         /*border: 3px solid white;*/
+        width: 689px;
+        height: 38px;
+        margin: 31px 40px 31px 39px;
     }
 @media only screen and (max-width: 700px) {
     body {
-        width: 700px;
+        width: 0px;
     }
     .message-tablet{
         height: 89px;
@@ -861,7 +1024,26 @@ textarea:hover{
     body{
         margin: 0;
         padding: 0;
-        width: 375px;        
+        width: 375px;
+        border: 1px solid blue;        
+    }
+
+    #top, #buttom{
+        display: none;
+    }
+
+    #topMob{
+        
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: -35px;
+    }
+    #botMob{
+        display: flex;
+        position: absolute;
+        top: 1695px;
+
     }
 
     nav{
@@ -887,6 +1069,10 @@ textarea:hover{
     .navBar {        
         width: 326.24px;
         height: 36.77px;
+        display: flex;
+        margin: 0px;
+        align-items: center;
+        justify-content: space-between;
     }
     
   .navBar ul{
@@ -896,8 +1082,101 @@ textarea:hover{
       display: none;
   }
 
-  .mobile{
+   .drop-down-menu{/*
+     display: block;
+      
+       */
+      /* left: 75px; */
+      /* 
+      margin: 0px;*/    
+      position: relative;
+      right: 93px;
+      top: 263px;
+      background-color: #1B262F;
+       width: 300px;
+       height: 667px;
+       z-index: 10;
+       transition: right 1s ease;
+       display: flex;
+  } 
+
+  .drop-down-menu ul{
+      /* border: 2px solid #FBFCFE; */
+        padding-left: 0px;
       display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 260px;
+      margin: 43px 0px 0px 0px;
+      position: relative;
+  }
+
+  .drop-down-menu li {
+        font-size: 20px;    
+      list-style-type: none;
+      
+  }
+
+  .drop-down-menu li:hover{
+      font-weight: bold;
+  }
+
+  .drop-down-menu li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #FBFCFE;
+  }
+  .menu{
+      display: flex;
+      z-index: 1;
+  }
+
+#navContainer{
+    z-index: 100;
+    margin: 24px 27px 0px 24px;
+    width: 249px;
+    height: 260px;
+    border: 1px solid #979797;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    position: relative;
+    top:  70px;
+    right: 273px;
+}
+  #scheDule button{
+        background-color:#BA4270 ;
+        width: 252px;
+        height: 48px;
+        border-radius: 24px;
+        text-align: center;
+        font-size: 15px;
+
+  }
+
+  #scheDule button:hover{
+      background-color: #DA6D97;
+  }
+
+  /* .close{
+     
+      
+  } */
+  .close svg{
+    margin: 48px 0px 0px 251px;
+
+  }
+
+ /* */.mobile{
+      display: none;
+      margin: 0px;
+      padding: 0px;
+      width: 0px;
+      height: 0px;
+      position: relative;
+      top: -320px;
+      right: 165px;
   }
 
   
@@ -938,6 +1217,7 @@ textarea:hover{
     width: 327px;
     height: 499px;
     display: block;
+    margin-left: 0px;
     
 }
 
@@ -1041,6 +1321,7 @@ label{
     height: 50px;
     width: 277px;
     font-size: 15px;
+    color: #36536B;
     /*border: 1px solid red;*/
 }
 
@@ -1157,6 +1438,8 @@ margin-left: -113px;
 }
 
 .RTS input[type=text] {
+    position: relative;
+    left: 0;
     color: #36536B;
     mix-blend-mode: normal;
     opacity: 0.5;
@@ -1247,7 +1530,7 @@ margin: 0px;
 
 .f-footSvg{
     margin: 0px 127px 0px 128px;
-    width: 128px;
+    width: 129px;
     height: 24px;
     /*border: 1px solid red;*/
 }
@@ -1271,8 +1554,50 @@ margin: 0px;
     width: 24px;
     height: 24px;
 }
+.footer{
+    display: none;
+    margin: 0px;
+    width: 480px;
+}
 
+footer{
+    width: 100%;
+}
+
+#feet{
+    width: 412px;
+}
 @media only screen and (max-width: 414px){
+    body{
+        width: 412px;
+    }
+
+    nav{
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+
+    .hOne{
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+    .middle{
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+    .RTS{
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+    .footer{
+        display: none;
+        margin: 0px;
+        width: 412px;
+    }
+    footer{
+        width: 100%;
+        height: 353px;
+    }
     #feet {    
         display: block;
         background-color: #1B262F;
@@ -1285,6 +1610,20 @@ margin: 0px;
 }
 
 @media only screen and (max-width: 375px){
+    footer {
+        width: 100%;
+    }
+    .footer{
+        display:  none;
+        color: #FBFCFE;
+        font-family: 'Public Sans', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 375px;
+        height: 38px;
+        margin: 0px;
+    }
     #feet {    
         display: block;
         background-color: #1B262F;
@@ -1301,7 +1640,7 @@ margin: 0px;
     
 }
   /*Tablet View*/
-@media only screen and (max-width: 1195px) {}
+
 /*Mobile*/
 @media only screen and (max-width: 380px) {
   

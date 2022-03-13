@@ -1,9 +1,9 @@
-const form = document.getElementById("form");
-const email = document.getElementById("email");
-const email2 = document.getElementById('email2');
+const form = document.getElementById('form')
+const email = document.getElementById('email');
 
 
-form.addEventListener('submit', e=> {
+
+form.addEventListener('submit', e => {
     e.preventDefault();
 
     validateInputs();
@@ -34,14 +34,32 @@ const isValidEmail = email => {
 };
 const validateInputs = () => {
     const emailValue = email.value.trim();
-    const email2Value = email2.value.trim();
+    // const email2Value = email2.value.trim();
     
 
     if(emailValue === '') {
         setError(email, "This field can't be empty")
     
+    }else if(!isValidEmail(emailValue)){
+        setError(email, "Please enter a valid email address.")
     } else {
         setSuccess(email)
     }
     
 };
+
+const openMenu = document.querySelector('.menu');
+const closeMenu = document.querySelector('.close');
+const dropMenu = document.querySelector('.mobile');
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+
+function show(){
+    dropMenu.style.display = 'block';
+    dropMenu.style.top = '263';
+}
+
+function close(){
+    dropMenu.style.display= 'none';
+}
