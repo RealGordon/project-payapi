@@ -49,10 +49,10 @@ nav{
     display: none;
 }
 
-nav ul{
-    /* border: 1px solid yellow; */
+/*nav ul{
+     border: 1px solid yellow; 
     
-}
+}*/
 nav li:hover{
     font-weight: bold;
 }
@@ -665,9 +665,9 @@ button:hover{
     height: 48px;
 }
 
-.RTS input[type=text]{
-    /*background-color: red;*/
-}
+/* .RTS input[type=text]{
+    background-color: red;
+} */
 
 .RTS input[type=submit] {
     margin: 0px;
@@ -1287,7 +1287,11 @@ form input[type=text] {
   }
 
 
-  form input[type=email] {    
+
+
+  form input[type=email] {
+    
+
     width: 327px;
     height: 42px;   
   }
@@ -1303,7 +1307,23 @@ form input[type=text] {
     border-color: rgb(255, 64, 64);
     color: rgb(255, 64, 64);
   }
+
+  input[type=submit]{
+    background-color: #EDF3F8;
+    border: 1px solid #36536B;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 8px;
+    width: 152px;
+    height: 48px;
+    margin: 0px;
+    margin-top: 24px;
+  }
   
+  input[type=submit]:hover {
+    background-color: #36536B;
+    color: white;
+}
   
 .message-mobile{
     height: 89px;
