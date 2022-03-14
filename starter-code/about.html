@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bulma -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-    <link rel="stylesheet" href="./css/w3.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
 
-    <title>Challenge</title>
+    <title>About</title>
+
+    <script defer src="./jsFile/about.js"></script>
 </head>
 <body>
     <header>
@@ -44,151 +43,138 @@
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-        <div class="mobile">
+        <!-- <div class="mobile">
           <svg width="28" height="17" xmlns="http://www.w3.org/2000/svg" id="menu
           ">
             <g fill="#36536B" fill-rule="evenodd">
             <path d="M0 0h28v3H0zM0 7h28v3H0zM0 14h28v3H0z"/></g>
           </svg>
-        </div>
+        </div> -->
         </div>
         <div class="navBar-link" >  
            <button>Schedule a Demo</button>  
         </div>
         
+
+        <!-- mobile menu -->
+
+        <div class="menu">
+        <svg width="28" height="17" xmlns="http://www.w3.org/2000/svg" id="menu">
+        <a>
+          <g fill="#36536B" fill-rule="evenodd">
+        <path d="M0 0h28v3H0zM0 7h28v3H0zM0 14h28v3H0z"/></g>
+        </a>              
+      </svg>
+      </div>
+    <div class="mobile hamburger-icon">            
+      
+      <div class="drop-down-menu">
+      <div class="close"> 
+          <svg width="22" height="23" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.839.54L21.96 2.66 13.12 11.5l8.84 8.839-2.121 2.121-8.84-8.84-8.838 8.84L.04 20.34l8.838-8.84L.04 2.662 2.16.54 11 9.378 19.839.54z" fill="#FBFCFE" fill-rule="evenodd"/>
+          </svg>
+      </div>
+        <div id="navContainer">
+         <ul>
+          <li><a href="./pricing/desktop/pricing.html">Pricing</a></li> 
+            <li><a href="./about/desktop/about.html">About</a></li>
+            <li><a href="./contact/desktop/contact.html">Contact</a></li>
+            <li id="scheDule"><a href="/"><button>Schedule a Demo</button></a></li>
+        </ul> 
+        </div>
+        
+      </div>
+      </div> 
            
       </nav>
+
+      
+      <!-- mobile -->
     </header>
 
     <main class="main">
-        <div id="title" style="border: 1px solid blue">
-          <h1>We empower inovators by delivering access to financial system</h1>
+        <div id="title">
+          <h1>We empower innovators by delivering access to financial system</h1>
         </div>
 
-        <!-- for sub vision n business -->
-        <div class="sub" style="border: 1px solid yellow">
-            <div class="vision">
-            <div class="w3-cell-row" style="width:75%">
-                <div class="w3-third w3-container">
-                  <h2>Our Vision</h2>
-                </div>
-                <div class="w3-twothird w3-container">
-                    <p id="paragraph">Our main goal is to build beautiful consumer experiences along with developer-friendly 
-                        infrastructure. The result is an intelligent tool that gives everyone the ability to create 
-                        amazing products that solve big problems. We are deeply focused on democratizing financial 
-                        services through technology.</p>
-                </div>
-              </div>
-            </div>
+        <!-- mission -->
+        <div class="mission">
+          <div class="miss1">
+            <h2>Our Vision</h2>
+            <p>Our main goal is to build beautiful consumer experiences along with developer-friendly 
+              infrastructure. The result is an intelligent tool that gives everyone the ability to create 
+              amazing products that solve big problems. We are deeply focused on democratizing financial 
+              services through technology.</p>
+          </div>
 
-            <div class="business">
-              <div class="w3-cell-row" style="width:75%">
-                <div class="w3-third w3-container">
-                  <h2>Our Business</h2>
-                </div>
-                <div class="w3-twothird w3-container">
-                    <p id="paragraph">At the core of our platform is the technical infrastructure APIs that connect consumers. 
-                        Our innovative product provides key insights for businesses and individuals, as well as 
-                        robust reporting for traditional financial institutions and developers..</p>
-                </div>
-              </div>
-            </div>
-        </div>
+          <div class="miss2">
+            <h2>Our Business</h2>
+            <p>At the core of our platform is the technical infrastructure APIs that connect consumers. 
+              Our innovative product provides key insights for businesses and individuals, as well as 
+              robust reporting for traditional financial institutions and developers.</p>
+          </div>
+      </div>
+
+      <!-- for circle image -->
+      <!-- <div class="circle">
+        <svg width="780" height="780" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="390" cy="390" r="390"/><circle id="b" cx="390" cy="390" r="390"/></defs><g fill="#36536B" fill-rule="evenodd" opacity=".15"><use xlink:href="#a"/><use xlink:href="#b"/></g></svg>
+      </div> -->
+
+      <div class="circle1">
+        <svg width="780" height="780" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="390" cy="390" r="390"/><circle id="b" cx="390" cy="390" r="390"/></defs><g fill="#36536B" fill-rule="evenodd" opacity=".15"><use xlink:href="#a"/><use xlink:href="#b"/></g></svg>
+      </div>
 
         <!-- for image -->
         <div class="image">
-            <div class="w3-container">
-                <!-- <img  alt="LA" class="w3-image" style="width:100%"> -->
-                <img src="./assets/about/desktop/image-team-members.jpg" alt="" style="width:100%">
-                <!-- <img src="img_lights.jpg" alt="Lights" class="w3-image" width="600" height="400"> --> 
-              </div>    
+          <img src="./assets/about/desktop/image-team-members.jpg" alt="" >
         </div>
 
 
-        <!-- layout -->
+<!-- for numbers -->
+<div class="teams">
+  <div class="t1">
+    <p>Team Members</p>
+    <h2>300+</h2>
+  </div>
 
-        <div class="lay" style="border: 1px solid purple">
-          <div class="w3-cell-row">
-            
-            <div class="w3-container w3-cell w3-mobile" id="lay1">
-              <hr>
-              <p class="team" style="margin-top: 17px;">Team Members </p>
-                    <p class="text" style="margin-bottom: 17px;">300+</p>
-                    <hr>
-            </div>
-            <div class="w3-container w3-cell w3-mobile" id="lay2">
-              <hr>
-              <p class="team" style="margin-top: 17px;">Offices in US </p>
-                    <p class="text" style="margin-bottom: 17px;">3</p>
-                    <hr>
-            </div>
-            <div class="w3-container w3-cell w3-mobile" id="lay3">
-              <hr>
-              <p class="team" style="margin-top: 17px;">Transactions analysed </p>
-                    <p class="text" style="margin-bottom: 17px;">30+</p>
-                    <hr>
-            </div>
-          </div>
-        </div>
+  <div class="t2">
+    <p>Offices in US</p>
+    <h2>3</h2>
+  </div>
+
+  <div class="t3">
+    <p>Transactions analysed</p>
+    <h2>10M+</h2>
+  </div>
+</div>
 
           <!-- the culture -->
 
-          <div class="sub1" style="border: 1px solid red">
-            <div class="vision">
-            <div class="w3-cell-row" style="width:75%">
-                <div class="w3-third w3-container">
-                  <h2>Our Culture</h2>
-                </div>
-                <div class="w3-twothird w3-container">
-                    <p id="paragraph" >We strongly believe there's always an opportunity to learn from each other outside of 
-                        day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
-                        We always value cross-team collaboration and diversity of thought, no matter the job title.</p>
-                </div>
-              </div>
+          <div class="mission" >
+            <div class="miss1" > 
+              <h2>Our Culture</h2>
+              <p>We strongly believe there's always an opportunity to learn from each other outside of 
+                day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
+                We always value cross-team collaboration and diversity of thought, no matter the job title.</p>
             </div>
-
-            <div class="business">
-              <div class="w3-cell-row" style="width:75%">
-                <div class="w3-third w3-container">
-                  <h2>The People</h2>
-                </div>
-                <div class="w3-twothird w3-container">
-                    <p id="paragraph">At the core of our platform is the technical infrastructure APIs that connect consumers. 
-                        We're all passionate about building a more efficient and inclusive financial infrastructure 
-                together. At PayAPI, we have diverse backgrounds and skills.</p>
-                </div>
-              </div>
+  
+            <div class="miss2">
+              <h2>The People</h2>
+              <p>At the core of our platform is the technical infrastructure APIs that connect consumers. 
+                We're all passionate about building a more efficient and inclusive financial infrastructure 
+        together. At PayAPI, we have diverse backgrounds and skills.</p>
             </div>
         </div>
 
-        <!-- Ready -->
-        
-          <div class="ready" style="border: 1px solid brown">
-            <div class="w3-cell-row">
-              <div class="w3-container w3-cell w3-mobile">
-                <h1>Ready to start? </h1>
-              </div>
-
-              <div class="w3-container w3-cell w3-mobile">
-                <form onsubmit="event.preventDefault()" class="pricing-schedule-form  w3-cell-row w3-round-xxlarge">
-                <div class="w3-cell">
-             <input class="w3-round-xxlarge pricing-schedule-input" 
-             placeholder="Enter email address" required> </div>
-             <div class="w3-cell">
-             <button  class="w3-btn w3-round-xxlarge pricing-schedule-button" type="submit">
-               Schedule a Demo</button></div>
-            </form>
-              </div>
-
-              <!-- <div class="w3-container w3-cell w3-mobile">
-                <p class="team">Transactions analysed </p>
-                      <p class="text">30+</p>
-              </div> -->
-            </div>
-          </div>
-          
-        
-
+        <!-- ready -->
+          <div class="RTS">
+            <h2>Ready to start?</h2> 
+            <form >
+              <input type="text" placeholder="Enter email address" id="email2" >              
+              <input type="submit" id="schedADemo" value="Schedule a Demo">
+              <div class="error"></div>
+            </form>  
+        </div>
     </main>
 
     <footer>
@@ -208,9 +194,9 @@
         </svg>
           <div id="my-feet">
               <ul>
-                <li><a href="">Pricing</a></li> 
+                <li><a href="./pricing/desktop/pricing.html">Pricing</a></li> 
                 <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="./contact/desktop/contact.html">Contact</a></li>
               </ul>
           </div>
         </div>
@@ -237,5 +223,7 @@
                    
       </div>
     </footer>
+
+    
 </body>
 </html>
