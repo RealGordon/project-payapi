@@ -1,0 +1,281 @@
+body{
+  background-color: #edf3f8;
+}
+.pricing-plan-caption{
+    color :#ba4270;
+  /*  font-family: "DM Serif Display" */ 
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 40px;
+ 
+}
+.pricing-plan-caption-tablet{
+  color :#ba4270;
+/*  font-family: "DM Serif Display" */ 
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 40px;
+
+}
+.pricing-plan-description{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 28px;
+/* or 187% */
+color: #6C8294;
+}
+.pricing-header{
+    color:#36536b;
+  font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: normal;
+font-size: 56px;
+line-height: 56px;
+/* identical to box height, or 100% */
+letter-spacing: -0.430769px;
+}
+.pricing-plans{
+ 
+  margin:auto;
+  text-align: left;
+ 
+}
+.pricing-price{
+  color:#36536b;
+  font-size: 56px;
+}
+.pricing-price-tablet{
+  color:#36536b;
+  font-size: 42px;
+}
+.pricing-request-button{
+  color:#36536b;
+  border: 1px solid #36536b;
+  margin-top: 12px;
+}
+.pricing-request-button:hover{
+  background-color: #36536B;
+  color: #FBFCFE;
+}
+.pricing-schedule-button{
+ background-color: #ba4270;
+ color:#fbfcfe;
+height: 48px;
+}
+.pricing-schedule-button-mobile{
+  background-color: #ba4270;
+  color:#fbfcfe;
+  width:100%;
+ height: 48px;
+ }
+.pricing-schedule-button:hover{
+  background-color: #da6d97;
+  color:#fbfcfe
+}
+
+.pricing-schedule-form{
+  background-color: #fff;
+  width: fit-content;
+}
+.pricing-schedule-caption{
+  color:#36536b;
+  font-size: 48px;
+  font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: normal;
+line-height: 56px;
+/* identical to box height, or 117% */
+letter-spacing: -0.369231px;
+}
+.pricing-schedule-caption-tablet{
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 56px;
+/* identical to box height, or 117% */
+
+text-align: center;
+letter-spacing: -0.369231px;
+
+color: #36536B;
+}
+.pricing-schedule-caption-mobile{
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height, or 112% */
+  
+  
+  letter-spacing: -0.246154px;
+  
+  color: #36536B;
+}
+/*ul{
+  list-style-image:url('../assets/tick-mark.svg');
+}*/
+
+li{
+  list-style-type: none;
+}
+
+.pricing-schedule-input{
+  border-style: none;
+  background-color: #fbfcfe;
+  
+}
+.pricing-schedule-input-mobile{
+  border-style: none;
+  width:100%;
+  height: 48px;
+}
+.pricing-separator-line-1{
+  margin: 12px 0 12px;
+  width:90%;
+  height:1px;
+opacity: 0.25;
+background-color: #36536B;
+}
+.pricing-separator-line-2{
+  margin: 20px 0 12px;
+  width:90%;
+  height:1px;
+opacity: 0.25;
+background-color: #36536B;
+}
+.pricing-list-first{
+  margin:12px 0 4px;
+}
+.pricing-list-item{
+/*  font-family: Public Sans;*/
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+/* identical to box height, or 175% */
+color: #36536B;
+  margin:4px 0 4px;
+}
+.pricing-list-faded{
+border: 1px solid #000000;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: rgba(54, 83, 107,0.2);
+}
+.pricing-header-section{
+  margin-top:72px;
+}
+
+/*   footer */
+footer{
+  background-color: #1B262F;
+  margin-left:0px;
+  margin-right: 0px;
+}
+.footer{
+  /*display: flex;*/
+ 
+  justify-content: space-around;
+  align-items: center;
+  
+  color: #FBFCFE;
+  margin: 0;
+  height: 100px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+
+.footer-logo-menu{
+ /* display: flex;*/
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.footer-menu{
+ /* display: flex;*/
+  margin: 4px;
+}
+
+
+.footer-menu li{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+color: #FBFCFE;
+
+mix-blend-mode: normal;
+opacity: 0.7;
+  margin-left: 25px;
+  margin-right: 25px;
+  list-style-type: none;
+
+}
+.footer a{
+  text-decoration: none;
+  color: #FBFCFE;
+}
+
+
+
+@media only screen and (max-width:992px){
+  .pricing-plans{
+  text-align: center;
+  /*width: 689px;*/
+  }
+}
+.pricing-plan-responsive img{
+  float:left;
+  margin-right: 24px;
+}
+
+.pricing-plan-mobile img{
+  width:16px; 
+  height:24px;
+  margin-right: 24px;
+}
+.pricing-plan-responsive  li.pricing-list-item-faded img{
+  float:left;
+  margin-right: 40px;
+  width:16px; 
+      height:24px;
+  opacity: 0;
+}
+.pricing-plan-mobile  li.pricing-list-item-faded img{
+  float:left;
+  margin-right: 40px;
+  width:16px; 
+      height:24px;
+  opacity: 0;
+}
+
+/* navigation*/
+.topnav a{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-decoration: none;
+
+color: #36536B;
+
+mix-blend-mode: normal;
+opacity: 0.7;
+margin-right:21px;
+margin-left: 21px;
+}
+.navlogo{
+  margin-right:21px;
+}
