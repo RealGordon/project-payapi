@@ -28,11 +28,11 @@
       var  desktop='desktop',
         tablet='tablet',
         mobile='mobile';
-        if((this.visualViewport.width<600 || screen.width<600 ) && mode!== mobile)return this.location=window.location.pathname.replace(mode,mobile);
-    if((this.visualViewport.width>600 || screen.width>600) && this.visualViewport.width<992  && mode!==tablet ){
+        if(( screen.width<600 ||(this.visualViewport &&  this.visualViewport.width<600 )) && mode!== mobile)return this.location=window.location.pathname.replace(mode,mobile);
+    if((  screen.width>600 || (this.visualViewport && this.visualViewport.width>600)) && this.visualViewport.width<992  && mode!==tablet ){
       return this.location=window.location.pathname.replace(mode,tablet);
     }
-    if((this.visualViewport.width>992 || screen.width>992) && mode!==desktop ){
+    if(( screen.width>992 || (this.visualViewport && this.visualViewport.width>992)) && mode!==desktop ){
       return this.location=window.location.pathname.replace(mode,desktop)
     }
       }
