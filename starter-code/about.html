@@ -20,6 +20,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
 
     <title>Challenge</title>
+
+    <script defer src="./jsFile/about.js"></script>
 </head>
 <body>
     <header>
@@ -53,8 +55,41 @@
            <button>Schedule a Demo</button>  
         </div>
         
+
+        <!-- mobile menu -->
+
+        <div class="menu">
+        <svg width="28" height="17" xmlns="http://www.w3.org/2000/svg" id="menu">
+        <a>
+          <g fill="#36536B" fill-rule="evenodd">
+        <path d="M0 0h28v3H0zM0 7h28v3H0zM0 14h28v3H0z"/></g>
+        </a>              
+      </svg>
+      </div>
+    <div class="mobile hamburger-icon">            
+      
+      <div class="drop-down-menu">
+      <div class="close"> 
+          <svg width="22" height="23" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.839.54L21.96 2.66 13.12 11.5l8.84 8.839-2.121 2.121-8.84-8.84-8.838 8.84L.04 20.34l8.838-8.84L.04 2.662 2.16.54 11 9.378 19.839.54z" fill="#FBFCFE" fill-rule="evenodd"/>
+          </svg>
+      </div>
+        <div id="navContainer">
+         <ul>
+          <li><a href="./pricing.html">Pricing</a></li> 
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li id="scheDule"><a href="/"><button>Schedule a Demo</button></a></li>
+        </ul> 
+        </div>
+        
+      </div>
+      </div> 
            
       </nav>
+
+      
+      <!-- mobile -->
     </header>
 
     <main class="main">
@@ -80,6 +115,15 @@
           </div>
       </div>
 
+      <!-- for circle image -->
+      <div class="circle">
+        <svg width="780" height="780" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="390" cy="390" r="390"/><circle id="b" cx="390" cy="390" r="390"/></defs><g fill="#36536B" fill-rule="evenodd" opacity=".15"><use xlink:href="#a"/><use xlink:href="#b"/></g></svg>
+      </div>
+
+      <div class="circle1">
+        <svg width="780" height="780" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="390" cy="390" r="390"/><circle id="b" cx="390" cy="390" r="390"/></defs><g fill="#36536B" fill-rule="evenodd" opacity=".15"><use xlink:href="#a"/><use xlink:href="#b"/></g></svg>
+      </div>
+
         <!-- for image -->
         <div class="image">
           <img src="./assets/about/desktop/image-team-members.jpg" alt="" >
@@ -89,31 +133,31 @@
 <!-- for numbers -->
 <div class="teams">
   <div class="t1">
-    <hr class="hr1">
+    <!-- <hr class="hr1"> -->
     <p>Team Members</p>
     <h2>300+</h2>
-    <hr class="hr2">
+    <!-- <hr class="hr2"> -->
   </div>
 
   <div class="t2">
-    <hr class="hr2">
+    <!-- <hr class="hr2"> -->
     <p>Offices in US</p>
     <h2>3</h2>
-    <hr class="hr2">
+    <!-- <hr class="hr2"> -->
   </div>
 
   <div class="t3">
-    <hr class="hr2">
+    <!-- <hr class="hr2"> -->
     <p>Transactions analysed</p>
     <h2>30+</h2>
-    <hr class="hr1">
+    <!-- <hr class="hr1"> -->
   </div>
 </div>
 
           <!-- the culture -->
 
-          <div class="mission">
-            <div class="miss1">
+          <div class="mission" >
+            <div class="miss1" > 
               <h2>Our Culture</h2>
               <p>We strongly believe there's always an opportunity to learn from each other outside of 
                 day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
@@ -185,5 +229,7 @@
                    
       </div>
     </footer>
+
+    
 </body>
 </html>
