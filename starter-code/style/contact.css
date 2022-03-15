@@ -289,7 +289,7 @@ textarea:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 24px 0px 24px 0px;
+    margin: 0px 0px 24px 0px;
 }
 
 label{
@@ -908,7 +908,7 @@ textarea:hover{
 .diff-nt{
     /*border: 1px solid red;*/
     display: flex;
-    margin: 24px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     justify-content: flex-start;
     
 }
@@ -1376,7 +1376,7 @@ textarea:hover{
 .diff-nt{
     display: flex;
     width: 327px;
-    margin: 24px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 label{
