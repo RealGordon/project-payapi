@@ -47,8 +47,9 @@
     if(( screen.width<600 ) && pathname.indexOf(mobile)===-1)return location="/starter-code/home/mobile/index.html";
   
   }
+  window.onresize=findDoc;
   </script>
-  <script defer>setTimeout(findDoc,5000)</script>
+  <script defer>setTimeout(findDoc,0)</script>
   
 
   </head>
