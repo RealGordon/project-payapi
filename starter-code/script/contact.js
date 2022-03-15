@@ -64,6 +64,10 @@ const validateInputs = () => {
         return setError(form.comName, "This field can't be empty")
 
      }
+     if(form.title.value.trim() === '') {
+        return setError(form.title, "This field can't be empty")
+
+     }
      if(form.message.value.trim() === '') {
         return setError(form.message, "This field can't be empty")
 
