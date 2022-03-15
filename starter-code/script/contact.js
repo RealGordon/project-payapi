@@ -23,6 +23,10 @@ const setError = (element, message) => {
 const onInput=()=>{
     this.nextElementSibling.innerHTML='';
 }
+form.comName.onchange=onInput;
+form.name.onchange=onInput;
+form.message.onchange=onInput;
+form.email.onchange-onInput;
 const setSuccess = element =>{
     const inputControls = element.parentElement;
     const errorDisplay = inputControls.querySelector('.error')
