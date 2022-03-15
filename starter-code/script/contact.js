@@ -20,12 +20,14 @@ const setError = (element, message) => {
     inputControls.classList.remove('success')
 
 }
-
+const onInput=()=>{
+    this.nextElementSibling.innerHTML='';
+}
 const setSuccess = element =>{
     const inputControls = element.parentElement;
     const errorDisplay = inputControls.querySelector('.error')
-
-    errorDisplay.innerText = '';
+  
+    //errorDisplay.innerText = '';
     inputControls.classList.add('success');
     inputControls.classList.remove('error');
 }
