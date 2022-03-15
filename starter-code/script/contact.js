@@ -40,17 +40,30 @@ const validateInputs = () => {
     // const email2Value = email2.value.trim();
 
     
-
-    if(emailValue === '') {
-        setError(email, "This field can't be empty")
+    if(form.name.value.trim() === '') {
+       return  setError(form.name, "This field can't be empty")
 
     
-    }else if(!isValidEmail(emailValue)){
-        setError(email, "Please enter a valid email address.")
+    }
 
-    } else {
+    if(emailValue === '') {
+       return  setError(email, "This field can't be empty")
+
+    }
+     if(!isValidEmail(emailValue)){
+        return setError(email, "Please enter a valid email address.")
+
+    }
+     if(form.comName.value.trim() === '') {
+        return setError(form.comName, "This field can't be empty")
+
+     }
+     if(form.message.value.trim() === '') {
+        return setError(form.message, "This field can't be empty")
+
+     }
         setSuccess(email)
-    }   
+     
 
 };
 
@@ -69,4 +82,3 @@ function show(){
 function close(){
     dropMenu.style.display= 'none';
 }
-
