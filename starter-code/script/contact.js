@@ -20,7 +20,7 @@ const setError = (element, message) => {
     inputControls.classList.remove('success')
 
 }
-const onInput=()=>{
+function onInput=()=>{
     this.nextElementSibling.innerHTML='';
 }
 form.children.comName.onchange=onInput;
