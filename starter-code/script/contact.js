@@ -27,6 +27,7 @@ form.children.comName.onchange=onInput;
 form.children.name.onchange=onInput;
 form.children.message.onchange=onInput;
 form.children.email.onchange=onInput;
+form.title.onchange=onInput;
 const setSuccess = element =>{
     const inputControls = element.parentElement;
     const errorDisplay = inputControls.querySelector('.error')
