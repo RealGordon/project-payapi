@@ -8,14 +8,14 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./starter-code/assets/favicon-32x32.png"
+      href="../../assets/favicon-32x32.png"
     />
     <!--<link rel="stylesheet" href="../../assets/style.css" />-->
         <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"> 
-  <!--  <link rel="stylesheet" href="/resources/css/4/w3.css" />
-    <link rel="stylesheet" href="/resources/fonts/font-awesome.min.css">-->
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/css/4/w3.css" />
+    <link rel="stylesheet" href="/resources/fonts/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -158,6 +158,106 @@ letter-spacing: -0.246154px;
 
 color: #36536B;
 }
+.blue-ball{
+  position: absolute;
+width: 780px;
+height: 780px;
+left: -202px;
+top: -50%;
+
+
+}
+.ui-plan-header{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height, or 139% */
+
+text-align: center;
+letter-spacing: -0.138462px;
+
+color: #36536B;
+}
+.ui-plan-description{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+
+text-align: center;
+letter-spacing: -0.115385px;
+
+color: #6C8294;
+}
+.simple-description{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 28px;
+/* or 187% */
+
+text-align: center;
+
+color: #6C8294;
+}
+.simple-header{
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 36px;
+/* identical to box height, or 100% */
+
+text-align: center;
+letter-spacing: -0.276923px;
+
+color: #36536B;
+
+}
+.easy-description{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 28px;
+/* or 187% */
+
+text-align: center;
+
+color: #6C8294;
+
+}
+.easy-header{
+  font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 36px;
+/* identical to box height, or 100% */
+
+text-align: center;
+letter-spacing: -0.276923px;
+
+color: #36536B;
+}
+.hidden-demo-button{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.115385px;
+
+color: #FBFCFE;
+}
   </style>
    <script>function myFunction() {
     var x = document.getElementById("hiddenlinks");
@@ -172,15 +272,18 @@ color: #36536B;
   
   function findDoc(){
           var pathname=window.location.pathname;
-    
       var  desktop='desktop',
         tablet='tablet',
         mobile='mobile';
         if(( screen.width<600 ) && pathname.indexOf(mobile)===-1)return location="/starter-code/home/mobile/index.html";
-    else if(screen.width>600)location="/starter-code/index.html";
+      else if( screen.width>600  && pathname.indexOf(mobile)!==-1){
+        return location='/starter-code/index.html';
       }
+      }
+      window.onresize=findDoc;
   </script>
-  <script defer>setTimeout(findDoc,5000)</script>
+
+  <script defer>setTimeout(findDoc,0)</script>
 
   </head>
 
@@ -218,13 +321,15 @@ color: #36536B;
           <li style="margin:20px auto 20px;"><a class="nav-list" href="../../pricing/mobile/pricing.html">Pricing</a></li> 
           <li style="margin:20px auto 20px;" ><a class="nav-list" href="../../about.html">About</a></li>
           <li style="margin:20px auto 20px;"><a class="nav-list" href="../../contact.html">Contact</a></li>
-         <li> <button class="w3-btn w3-margin w3-round-xxlarge pricing-schedule-button" type="submit">
-            Schedule a Demo</button></li>
+         <li><a  onclick="myFunction()" href="#schedule_demo" 
+          class="w3-btn w3-center w3-margin w3-round-xxlarge pricing-schedule-button hidden-demo-button" type="submit">
+            Schedule a Demo</a></li>
         </ul>
         </div>
         </div>    
         </nav>
         <div class="w3-center">
+        <img class="blue-ball w-center" style="z-index:1;" src="../../assets/shared/desktop/bg-pattern-circle.svg">
         <img width="85%" src="../../assets/home/desktop/illustration-phone-mockup.svg" />
        </div>
           <!--
@@ -250,15 +355,15 @@ color: #36536B;
       Start -->
       
        
-          <div class="w3-border w3-border-red w3-container">
-            <div class="w3-container w3-margin w3-center">
+          <div class=" w3-container">
+            <div class="w3-container w3-margin w3-center" id="schedule_demo">
               
               <h1 class="start-building">Start building with our APIs for absolutely free.</h1>
             </div>
-            <div class="w3-container w3-border w3-border-red w3-auto w3-col s12 w3-center" style="background-color: #edf3f8;margin:40px auto 80px;text-align: center;">
+            <div class="w3-container  w3-auto w3-col s12 w3-center" style="background-color: #edf3f8;margin:40px auto 80px;text-align: center;">
     
 
-              <div class="w3-auto w3-center " style="text-align: center;max-width:328px;margin:auto;">
+              <div  class="w3-auto w3-center " style="text-align: center;max-width:328px;margin:auto;">
               
                 <form onsubmit="event.preventDefault()" class="w3-auto pricing-schedule-form-mobile" 
                 style="width:100%;margin:auto;">
@@ -342,8 +447,8 @@ color: #36536B;
         </div>
       
         <div class="w3-container w3-center">          
-          <h2>Easy to implement</h2>
-          <p>
+          <h2 class="easy-header">Easy to implement</h2>
+          <p class="easy-description">
             Our API comes with just a few lines of code. You’ll be up and
             running in no time. We built our documentation page to integrate
             payments functionality with ease.
@@ -362,8 +467,8 @@ color: #36536B;
         </div>         
          
             <div class="w3-container w3-center">
-              <h2>Simple UI & UX</h2>
-              <p>
+              <h2 class="simple-header">Simple UI & UX</h2>
+              <p class="simple-description">
                 Our pre-built form is easy to integrate in your app or website’s
                 checkout flow and designed to optimize conversion
               </p>            
@@ -380,8 +485,8 @@ color: #36536B;
               <img src="../../assets/home/desktop/icon-personal-finances.svg" />
             </div>
             <div class="w3-center">
-              <h2>Personal Finances</h2>
-              <p>
+              <h2 class="ui-plan-header">Personal Finances</h2>
+              <p class="ui-plan-description">
                 Consolidate financial data from multiple sources and categorize
                 transactions up to 2 years of history. Analyze reports to
                 reconcile activities in your account.
@@ -396,8 +501,8 @@ color: #36536B;
               <img src="../../assets/home/desktop/icon-consumer-payments.svg" />
             </div>
             <div class="w3-center">
-              <h2>Banking & Coverage</h2>
-              <p>
+              <h2 class="ui-plan-header">Banking & Coverage</h2>
+              <p class="ui-plan-description">
                 With our platform, you can speed up account onboarding and
                 support ongoing payments for checking, savings, credit card, and
                 brokerage accounts.
@@ -413,8 +518,8 @@ color: #36536B;
             </div>
           </div>
           <div class="w3-center">
-            <h2>Consumer Payments</h2>
-            <p>
+            <h2 class="ui-plan-header">Consumer Payments</h2>
+            <p class="ui-plan-description">
               It’s easier to set up secure bank payments with us through a flow
               designed with the user experience in mind. Customers could
               instantly authenticate their account.
@@ -506,10 +611,10 @@ color: #36536B;
     <div class="w3-auto w3-center"  style="margin:auto" >
         <ul class="footer-menu w3-auto" >
           <li class="w3-container w3-margin"
-         ><a href="./pricing.html">Pricing</a></li> 
+         ><a href="../../pricing/mobile/pricing.html">Pricing</a></li> 
           <li class="w3-container  w3-margin"
-          ><a href="./about.html">About</a></li>
-          <li class="w3-container  w3-margin" ><a href="./contact.html">Contact</a></li>
+          ><a href="../../about.html">About</a></li>
+          <li class="w3-container  w3-margin" ><a href="../../contact.html">Contact</a></li>
         </ul>
     </div>
  
@@ -517,19 +622,19 @@ color: #36536B;
  
     <div class="w3-container w3-center w3-margin" style="display:inline-flex">
       <div class="w3-container" style="margin-right: 12px;">
-       <a href=""> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+       <a href="#"> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           
           <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" fill="#FBFCFE" fill-rule="nonzero"/>
           
         </svg></a></div>
         <div class="w3-container" style="margin-left: 12px;margin-right: 12px;">
-        <a href="">  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <a href="#">  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
         
           <path d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" fill="#FBFCFE" fill-rule="nonzero"/>
        
         </svg>   </a></div>
         <div class="w3-container" style="margin-left: 12px;">
-        <a href=""> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <a href="#"> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
          
           <path d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h19.2c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0zM7.2 20.4H3.6V9.6h3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zm15 12.84h-3.6v-6.36c0-.96-.84-1.8-1.8-1.8-.96 0-1.8.84-1.8 1.8v6.36H9.6V9.6h3.6v1.44c.6-.96 1.92-1.68 3-1.68 2.28 0 4.2 1.92 4.2 4.2v6.84z" fill="#FFF" fill-rule="nonzero"/>
          
